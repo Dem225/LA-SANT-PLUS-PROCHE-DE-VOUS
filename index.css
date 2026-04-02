@@ -14,6 +14,7 @@ align-items: center;
 }
 #LOGO img{ width: 90px;
 height:90px;
+
 margin: 5px;
 }
 #liste{
@@ -69,18 +70,14 @@ text-decoration: none;
     color: black;
     font-size: 12px;    
 }
+
 main{
-    height: 800px;
-   max-width: 100%;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    object-fit: cover;
-    background-image: url(./Images/Accueil.jpeg);
+    height: 700px;
+    width: 100%;
+    background-image: url(./Images/Accueil.jpeg), linear-gradient(#2d84516d);
     background-position: center;
     background-repeat: no-repeat;
-   background-size: cover;
+    background-size: cover;
+    background-blend-mode: overlay;
     
 }
-
