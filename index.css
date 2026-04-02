@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+header{
+    height: 100px;
+    width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+align-items: center;
+
+}
+#LOGO img{ width: 90px;
+height:90px;
+margin: 5px;
+}
+#liste{
+height:80% ;
+width:30% ;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 25px;
+
+}
+#Connexions{
+    width: 20%;
+    height: 50%;
+    margin: 7px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#liste a{
+text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#liste li{
+     list-style: none;
+}
+.Sou_connexions{
+    height: 80%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Sou_connexions_base{
+    height: 80%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #036929;
+    border-radius: 10px;
+}
+.Sou_connexions_base{
+    font-size: 12px;
+    color: white;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Sou_connexions a{
+     text-decoration: none;
+    color: black;
+    font-size: 12px;    
+}
+main{
+    height: 800px;
+   max-width: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    object-fit: cover;
+    background-image: url(./Images/Accueil.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+   background-size: cover;
+    
+}
+
