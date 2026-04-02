@@ -56,7 +56,7 @@ text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #036929;
+    background-color: #2D8451;
     border-radius: 10px;
 }
 .Sou_connexions_base{
@@ -74,10 +74,143 @@ text-decoration: none;
 main{
     height: 700px;
     width: 100%;
-    background-image: url(./Images/Accueil.jpeg), linear-gradient(#2d84516d);
+    background-image: url(./Images/Accueil.jpeg), linear-gradient(#438d62d0);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: overlay;
-    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.box_texte{
+height: 55%;
+width: 50%;
+white-space: normal;
+text-align: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+gap: 40px;
+margin: 20px;
+margin-top: 140px;
+}
+.box_case{
+height: 13%;
+width: 60%;
+justify-content: space-around;
+display: flex;
+align-items: center;
+margin: 20px;
+background-color: #fff;
+border-radius: 15px;
+}
+.box_texte h3{
+font-family: serif;
+font-size: 20px;
+color: #84FF46;
+padding: 20px;
+}
+.box_texte h4{
+    font-family: serif;
+font-size: 25px;
+color: white;
+padding: 20px;
+
+}
+.box_texte h5{
+font-family: serif;
+font-size: 20px;
+color: white;
+padding: 20px;
+
+}
+.information{
+    height: 50%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+  justify-content: center;
+}
+.hopital{
+    padding: 15px;
+    font-size: 12px;
+    background-color: #cdcdcd71;
+    border: transparent;
+    border-radius: 15px;
+}
+.information button{
+    height: 45px;
+    width: 160px;
+    border: transparent;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color:#ED9649;
+}
+nav{
+    height: 400px;
+    width: 100%;
+    background-color: #F8F9FB;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    justify-content: center;
+    gap: 50PX;
+}
+.impacte{
+    height: 59%;
+    width: 23%;
+   background-color: #FFFFFF;
+}
+.BOX_impacte{
+    height:47% ;
+    width:18% ;
+    background-color: #F3F4F6;
+    display: flex;
+    flex-direction: column;
+   
+}
+.BOX_impacte h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    color: #4EA149;
+}
+.BOX_impacte h3 span{
+     font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    color: #A96A6A;
+}
+.BOX_impacte h3 samp{
+     font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    color: #3E30D1;
+}
+.BOX_impacte h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-align: center;
+    padding: 10px;
+}
+
+.BOX_impacte p{
+    font-size: 16px;
+    padding: 10px;
+}
+.impacte h3{
+       font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    text-align: center;
+    padding: 15px;
+    color: #195807;
+}
+.impacte p{
+     font-size: 16px;
+    padding: 10px;
+    margin: 20px;
 }
