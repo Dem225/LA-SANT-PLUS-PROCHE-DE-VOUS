@@ -56,7 +56,7 @@ text-decoration: none;
 }
 .Sou_connexions_base button{
     height: 40px;
-    width: 154px;
+    width: 145px;
     border: transparent;
     background-color: #036929;
      font-size: 12px;
@@ -265,7 +265,7 @@ background-color: #F8F9FB;
 .Box_urgent{
     Height:70% ;
     width:90%;
-    margin-top: 110px;
+    margin-top: 100px;
     gap: 24px;
     display: flex;
     flex-direction: column;
@@ -387,7 +387,7 @@ border-radius: 15px;
 
 #UG_medicale{
     height: 80px;
-    width: 77%;
+    width: 80%;
    background-color: #ffdad7b1;
     display: flex;
     justify-content: space-between;
@@ -407,7 +407,7 @@ border-radius: 15px;
 }
 .Appel{
     height: 55%;
-  width: 9%;
+  width: 12%;
   border: 1px solid black;
   margin: 10px;
   align-items:   center;
@@ -422,11 +422,11 @@ border-radius: 15px;
     color: #000000;
 }
 .téléphne p {
-    font-size: 17px;
+    font-size: 14px;
     color: #d91313;
 }
 .Appel i{
-    font-size: 22px;
+    font-size: 18px;
     padding: 10px;
     color: #FFFFFF;
 }
@@ -470,4 +470,98 @@ footer{
 .flex i{
      font-size: 25px;
     margin-top: 30px;
+}
+
+
+
+
+/* --- RESPONSIVE DESIGN --- */
+
+/* Ajustements pour Tablettes et Mobiles (max 1024px) */
+@media screen and (max-width: 1024px) {
+    header {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+
+    #liste, #Connexions {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    #bienvenue {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .box_texte, .box_case {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    nav, #Sante, footer {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .impacte, .BOX_impacte, .UrGente, .Espace, .flex {
+        width: 85% !important;
+        margin: 10px auto !important;
+    }
+
+    .box_case {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .information {
+        width: 100%;
+    }
+}
+
+/* Ajustements spécifiques pour Mobiles (max 480px) */
+@media screen and (max-width: 480px) {
+    #liste {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: end;
+      ;
+    }
+
+    .box_texte h4 {
+        font-size: 18px;
+    }
+
+    .flexe_cum {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .box_flexe_cum, .box_flexe_cum_titre {
+        width: 100%;
+    }
+
+    #UG_medicale {
+        width: 95%;
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .téléphne {
+        width: 100%;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .Appel {
+        width: 100px;
+        margin-bottom: 10px;
+    }
 }
