@@ -1,7 +1,11 @@
 *{
     padding: 0;
     margin: 0;
-    
+     font-family: 'Poppins',sans-serif;
+}
+body{
+    height: 120vh;
+    background-color: #F8F9FB;
 }
 header{
     height: 100px;
@@ -48,30 +52,26 @@ text-decoration: none;
     width: 40%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:   center;
 }
-.Sou_connexions_base{
-    height: 80%;
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #2D8451;
-    border-radius: 10px;
-}
-.Sou_connexions_base{
-    font-size: 12px;
+.Sou_connexions_base button{
+    height: 40px;
+    width: 154px;
+    border: transparent;
+    background-color: #036929;
+     font-size: 12px;
     color: white;
     font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
 }
+
 .Sou_connexions a{
      text-decoration: none;
     color: black;
     font-size: 12px;    
 }
 
-main{
+#bienvenue{
     height: 700px;
     width: 100%;
     background-image: url(./Images/Accueil.jpeg), linear-gradient(#438d62d0);
@@ -213,4 +213,261 @@ nav{
      font-size: 16px;
     padding: 10px;
     margin: 20px;
+}
+
+.Service{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+font-family: Arial, Helvetica, sans-serif;
+background-color: #F8F9FB;
+}
+.Service h3{
+    color: black;
+    font-size: 35px;
+    
+}
+#Sante{
+    height: 450px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F8F9FB;
+    
+}
+.UrGente {
+    height: 80%;
+    width: 25%;
+    border: transparent;
+    background-color: #006B2F;
+ margin: 70px;
+ display: flex;
+ flex-direction: column;
+ gap: 30px;
+ padding: 25px;
+ border-radius: 10px;
+ 
+}
+.Espace{
+    height: 85%;
+    width: 35%;
+    background-color: #F8F9FB;
+     margin: 10px;
+     display: flex;
+     flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    margin: 28px;
+}
+.Box_urgent{
+    Height:70% ;
+    width:90%;
+    margin-top: 110px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.UrGente .UR_gent {
+   height: 42px;
+   width: 145px;
+    font-size: 15px;
+    border: transparent;
+    background-color: #65D183;
+    border-radius: 10px;
+}
+.carte{
+    height: 50px;
+   width: 178px;
+    font-size: 15px;
+   border: transparent;
+   border-radius: 10px;
+   background-color: #FFFFFF;
+}
+.Box_urgent h3{
+    font-size: 23px;
+    color: #FFFFFF;
+}
+.Box_urgent p{
+    color: #ffffff;
+    font-size: 17px;
+}
+.CUM{
+    height: 43%;
+    width: 100%;
+   background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+   
+}
+.flexe_cum{
+    height: 55%;
+    width: 100%;
+    background-color: #F8F9FB;
+    display: flex;
+    justify-content: space-between;
+   align-items:   center;
+   
+}
+
+.box_flexe_cum{
+    height: 90%;
+    width: 45%;
+   background-color: #0159BB;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+border-radius: 15px;
+}
+.box_flexe_cum_titre{
+     height: 90%;
+    width: 45%;
+   background-color: #E2E3E5;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+
+.CUM i{
+    font-size: 30px;
+    padding: 13px;
+}
+.CUM h3{
+    font-size: 20px;
+     padding: 12px;
+}
+.CUM p{
+    font-size: 15px;
+     padding: 12px;
+}
+.box_flexe_cum h2{
+    font-size: 26px;
+  padding: 17px;
+}
+.box_flexe_cum p{
+     font-size: 20px;
+  padding: 17px;
+}
+.box_flexe_cum i{
+    font-size: 40px;
+    padding: 10px ;
+}
+.box_flexe_cum h3{
+    font-size: 25px;
+     padding: 10px ;
+}
+.box_flexe_cum span{
+    font-size: 17px;
+     padding: 10px ;
+}
+
+.box_flexe_cum_titre i{
+    font-size: 40px;
+    padding: 10px ;
+}
+.box_flexe_cum_titre h3{
+    font-size: 25px;
+     padding: 10px ;
+}
+.box_flexe_cum_titre span{
+    font-size: 17px;
+     padding: 10px;
+    
+}
+.box_flexe_cum_titre  a{
+     color: black;
+     text-decoration: none;
+}
+
+#UG_medicale{
+    height: 80px;
+    width: 77%;
+   background-color: #ffdad7b1;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 10px;
+    align-items:   center;
+    border-radius: 10px;
+}
+.téléphne{
+  height: 90%;
+  width: 50%;
+  display: flex;
+  align-items:   center;
+   margin: 15px;
+   gap: 50px;
+ 
+}
+.Appel{
+    height: 55%;
+  width: 9%;
+  border: 1px solid black;
+  margin: 10px;
+  align-items:   center;
+  display: flex;
+  border-radius: 10px;
+  border: transparent;
+  background-color:#BD1A1B ;
+}
+.téléphne i{
+    font-size: 31px;
+    padding: 20px;
+    color: #000000;
+}
+.téléphne p {
+    font-size: 17px;
+    color: #d91313;
+}
+.Appel i{
+    font-size: 22px;
+    padding: 10px;
+    color: #FFFFFF;
+}
+.Appel p{
+    font-size: 22px;
+    padding: 19px;
+    color: #FFFFFF;
+}
+footer{
+    height: 400px;
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    background-color: #e4e4e671;
+    margin-top: 55px;
+    align-items:   center
+    
+}
+.flex{
+    height: 75%;
+    width: 22%;
+      background-color: #e4e4e621;
+      text-align: center;
+
+}
+.flex h3{
+    font-size: 25px;
+    padding: 15px;
+}
+.flex h3 span{
+    color: #49D085;
+}
+.flex p{
+    font-size: 19px;
+    margin-top: 30px;
+}
+.flex h4{
+    font-size: 19px;
+    margin-top: 30px;
+}
+.flex i{
+     font-size: 25px;
+    margin-top: 30px;
 }
