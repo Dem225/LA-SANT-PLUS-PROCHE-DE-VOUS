@@ -32,7 +32,7 @@ gap: 25px;
 }
 #Connexions{
     width: 20%;
-    height: 50%;
+    height: 80%;
     margin: 7px;
     display: flex;
     justify-content: space-around;
@@ -47,28 +47,17 @@ text-decoration: none;
 #liste li{
      list-style: none;
 }
-.Sou_connexions{
-    height: 80%;
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items:   center;
-}
+
 .Sou_connexions_base button{
     height: 40px;
-    width: 145px;
+    width: 110px;
     border: transparent;
     background-color: #036929;
-     font-size: 12px;
+     font-size: 10px;
     color: white;
-    font-size: 13px;
     border-radius: 10px;
-}
-
-.Sou_connexions a{
-     text-decoration: none;
-    color: black;
-    font-size: 12px;    
+   margin: 20px;
+   border: 1px solid black;
 }
 
 #bienvenue{
@@ -102,7 +91,7 @@ justify-content: space-around;
 display: flex;
 align-items: center;
 margin: 20px;
-background-color: #fff;
+background-color: #438d62d0 transparent;
 border-radius: 15px;
 }
 .box_texte h3{
@@ -135,9 +124,10 @@ padding: 20px;
 .hopital{
     padding: 15px;
     font-size: 12px;
-    background-color: #cdcdcd71;
+    background-color: #438d6245 ;
     border: transparent;
     border-radius: 15px;
+    color:white;
 }
 .information button{
     height: 45px;
@@ -145,7 +135,7 @@ padding: 20px;
     border: transparent;
     font-size: 15px;
     border-radius: 10px;
-    background-color:#ED9649;
+    background-color:#ed9549d7;
 }
 nav{
     height: 400px;
@@ -473,95 +463,162 @@ footer{
 }
 
 
-
-
-/* --- RESPONSIVE DESIGN --- */
+/* --- RESPONSIVE DESIGN OPTIMISÉ --- */
 
 /* Ajustements pour Tablettes et Mobiles (max 1024px) */
 @media screen and (max-width: 1024px) {
-    header {
-        flex-wrap: wrap;
+    header  {
         height: auto;
-        padding: 10px;
+        display: flex;
+        padding: 20px;
+        gap: 20px;
     }
 
-    #liste, #Connexions {
+    #liste {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+ #burger-icon {
+        display: block; /* Visible sur Mobile */
+        font-size: 30px;
+        color: #036929;
+        cursor: pointer;
+    }
+    #Connexions {
         width: 100%;
         justify-content: center;
-        margin-top: 10px;
+        gap: 20px;
     }
 
     #bienvenue {
-        height: auto;
-        padding-bottom: 50px;
-    }
-
-    .box_texte, .box_case {
-        width: 90%;
-        margin: 20px auto;
-    }
-
-    nav, #Sante, footer {
-        flex-direction: column;
-        height: auto;
+        height: auto; /* Supprime le 700px fixe */
         padding: 40px 0;
     }
 
-    .impacte, .BOX_impacte, .UrGente, .Espace, .flex {
-        width: 85% !important;
-        margin: 10px auto !important;
+    .box_texte {
+        width: 90%;
+        margin: 40px auto;
+        height: auto;
+        gap: 20px;
     }
 
     .box_case {
-        flex-direction: column;
+        width: 90%;
         height: auto;
+        flex-direction: column;
         padding: 20px;
         gap: 15px;
+        margin: 0 auto;
     }
 
     .information {
         width: 100%;
     }
+
+    nav {
+        height: auto;
+        flex-direction: column;
+        padding: 50px 20px;
+        gap: 30px;
+    }
+
+    .impacte, .BOX_impacte {
+        width: 100% !important;
+        height: auto;
+        margin: 0 !important;
+        padding: 20px;
+    }
+
+    #Sante {
+        height: auto;
+        flex-direction: column;
+        padding: 40px 0;
+    }
+
+    .UrGente, .Espace {
+        width: 90% !important;
+        height: auto;
+        margin: 20px auto !important;
+    }
+
+    .Box_urgent {
+        margin-top: 20px;
+    }
+
+    footer {
+        height: auto;
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 40px;
+    }
+
+    .flex {
+        width: 100% !important;
+        height: auto;
+    }
 }
 
 /* Ajustements spécifiques pour Mobiles (max 480px) */
 @media screen and (max-width: 480px) {
-    #liste {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: end;
-      ;
+    .box_texte h4 {
+        font-size: 20px;
     }
 
-    .box_texte h4 {
-        font-size: 18px;
+    .box_texte h5 {
+        font-size: 16px;
     }
 
     .flexe_cum {
         flex-direction: column;
         height: auto;
+        gap: 15px;
     }
 
     .box_flexe_cum, .box_flexe_cum_titre {
         width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 15px;
     }
 
     #UG_medicale {
         width: 95%;
-        flex-direction: column;
         height: auto;
-        padding: 10px;
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
     }
 
     .téléphne {
         width: 100%;
-        gap: 10px;
+        flex-direction: column;
         text-align: center;
+        gap: 10px;
+        margin: 0;
     }
 
     .Appel {
-        width: 100px;
-        margin-bottom: 10px;
+        width: 150px;
+        height: 50px;
+        justify-content: center;
     }
+
+    .Appel p {
+        padding: 5px;
+    }
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden; /* Empêche le site de bouger à gauche ou à droite */
+    position: relative;
+}
+
+#burger-icon {
+    display: none; /* Caché sur PC */
+}
+
+@media screen and (max-width: 768px) {
+   
 }
