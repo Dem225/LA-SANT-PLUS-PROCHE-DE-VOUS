@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+     font-family: 'Poppins',sans-serif;
+}
+body{
+    height: 120vh;
+    background-color: #F8F9FB;
+}
+header{
+    height: 100px;
+    width: 100%;
+background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+align-items: center;
+
+}
+#LOGO img{ width: 90px;
+height:90px;
+
+margin: 5px;
+}
+#liste{
+height:80% ;
+width:30% ;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 25px;
+
+}
+#Connexions{
+    width: 20%;
+    height: 80%;
+    margin: 7px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#liste a{
+text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#liste li{
+     list-style: none;
+}
+
+.Sou_connexions_base button{
+    height: 40px;
+    width: 110px;
+    border: transparent;
+    background-color: #036929;
+     font-size: 10px;
+    color: white;
+    border-radius: 10px;
+   margin: 20px;
+   border: 1px solid black;
+}
+#Sante_Nationale{
+    height: 350px;
+      width: 100%;
+    background-color: #F3F4F6;
+    display: flex;
+    flex-direction: column;
+   
+}
+#Sante_Nationale h3{
+color: #ECAC2B;
+font-size: 20px;
+ margin: 14px;
+padding: 20px;
+}
+#Sante_Nationale h4{
+    font-size: 25px;
+    color: black;
+ margin: 14px;
+ padding: 20px;
+}
+#Sante_Nationale p{
+    font-size: 18px;
+    color: black;
+ margin: 14px;
+ padding: 20px;
+}
+#Reginale{
+    height: 550px;
+    width: 100%;
+     background-color: #FFFFFF;
+      display: flex;
+      justify-content: space-between;
+}
+.reginal_flexe{
+    height: 100%;
+    background-color: #FFFFFF;
+     width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+.reginal_box{
+    height: 100%;
+     border: 1px solid black;
+     width: 40%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 20px;
+}
+.tradiction_flex{
+    height: 60%;
+    width:  100%;
+    background-color: #FFFFFF;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.tradiction_box{
+ height: 60%;
+    width: 50%;
+    
+    margin:0 auto;
+}
+.tradiction_box img{
+height: 100%;
+width: 100%;
+}
+
+.flext_texte{
+    height: 100%;
+    width: 50%;
+    background-color: #FFFFFF;
+  
+     flex-direction: column;
+     display: flex;
+     
+}
+.flext_texte span{
+padding: 16px;
+font-size: 22px;
+}
+.flext_texte p{
+padding: 15px;
+font-size: 15px;
+}
+
+
+.flext_bax{
+    height: 50%;
+    width: 45%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.fiste_bax{
+    height: 55%;
+    width: 40%;
+    
+     background-color: #A8D5C2;
+     align-items: center;
+     display: flex;
+     justify-content: center;
+     border-radius: 10px;
+}
+.fiste_case{
+     height: 55%;
+    width: 40%;
+    background-color: #E2CAB9;
+     align-items: center;
+     display: flex;
+     justify-content: center;
+     border-radius: 10px;
+}
+.phase_reginal{
+    height: 49%;
+    width: 70%;
+   background-color: #006B2F;
+   
+}
+.reginal_face{
+     height: 30%;
+    width: 70%;
+     border: 1px solid black;
+     display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.phase_reginal span i{
+    font-size: 40px;
+   color: #FFFFFF;
+ padding: 14px;
+}
+
+.phase_reginal h5{
+    font-size: 26px;
+      padding: 10px;
+      color: #FFFFFF;
+}
+.phase_reginal p{
+    font-size: 17px; 
+     padding: 10px;
+}
+.phase_reginal h4{
+    font-size: 24px; 
+ color: #88FAA2;
+     padding: 10px;
+}
+
+.fliste_face{
+    height: 30%;
+    width: 100%;
+     border: 1px solid black;
+     justify-content: center;
+     display: flex;
+}
+.fliste_face{
+    font-size: 17px;
+}
+.souce_face{
+    height: 70%;
+    width: 100%;
+     border: 1px solid rgb(117, 7, 7);
+     display: flex;
+     flex-direction: column;
+    text-align: center;
+    justify-content: center;
+   
+     gap: 10px;
+     
+}
+.souce_face_double{
+    height: 30%;
+    width: 15%;
+     border: 1px solid black;
+
+   
+}
+/* .souce_face_treips{
+    
+     width: 100%;
+    height: 39%;
+    border: 1px solid black;
+}
+.mots{
+    height:50%;
+    width: 15%;
+     border: 1px solid rgb(177, 16, 16);
+     display: flex;
+     justify-content: space-between;
+} */
