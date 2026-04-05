@@ -63,7 +63,7 @@ text-decoration: none;
 #bienvenue{
     height: 700px;
     width: 100%;
-    background-image: url(./Images/Accueil.jpeg), linear-gradient(#438d62d0);
+    background-image: url(./souce_index/IMAGES/Accueil.jpeg), linear-gradient(#438d62d0);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
