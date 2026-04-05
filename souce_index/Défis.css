@@ -857,3 +857,88 @@ body {
     /* Empêche le site de bouger à gauche ou à droite */
     position: relative;
 }
+
+
+/* ============================================================
+   STRATÉGIE RESPONSIVE AMÉLIORÉE (FLUIDITÉ & CENTRAGE)
+   ============================================================ */
+
+/* --- 1. AJUSTEMENTS GLOBAUX --- */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    height: auto !important;
+    scroll-behavior: smooth; /* Navigation plus douce */
+}
+
+/* --- 2. ADAPTATION TABLETTES (Moins de 1024px) --- */
+@media screen and (max-width: 1024px) {
+    header { height: auto; padding: 15px; flex-wrap: wrap; justify-content: center; }
+    #liste { width: 100%; order: 3; justify-content: center; margin-top: 15px; flex-wrap: wrap; }
+    #Connexions { width: auto; order: 2; margin: 0; }
+    
+    #Reginale, #Vue_globale { 
+        flex-direction: column; 
+        height: auto !important; 
+        padding: 40px 0;
+        align-items: center;
+    }
+    .reginal_flexe, .reginal_box, .Statistique, .Statistique_image { 
+        width: 90% !important; 
+        min-height: auto !important;
+        margin-bottom: 30px;
+    }
+}
+
+/* --- 3. ADAPTATION SMARTPHONES (Moins de 768px) --- */
+@media screen and (max-width: 768px) {
+    /* Typographie plus lisible */
+    #Sante_Nationale { height: auto !important; padding: 50px 15px; text-align: center; }
+    #Sante_Nationale h4 { font-size: 22px; margin: 10px 0; }
+    #Sante_Nationale p { font-size: 16px; line-height: 1.5; }
+    #Sante_Nationale p br { display: none; }
+
+    /* Cartes & Graphiques */
+    .tradiction_flex { flex-direction: column; height: auto; padding: 20px; }
+    .flext_texte, .flext_bax { width: 100% !important; align-items: center; }
+    .tradiction_box { width: 100%; max-width: 320px; height: auto; margin-top: 20px; }
+    .tradiction_box img { object-fit: contain; }
+
+    /* Chiffres Clés (Amélioration du centrage) */
+    .phase_reginal { height: auto !important; padding: 20px; width: 85%; margin: 0 auto; }
+    .reginal_face { height: auto !important; width: 100%; margin-top: 20px; }
+    .souce_face_double, .souce_face_treips { flex-direction: column; align-items: center; gap: 20px; }
+    .temps { text-align: center; padding: 0 10px; }
+
+    /* TABLEAU DES RÉGIONS (Style "Card" épuré) */
+    #vusuelle { height: auto !important; padding: 30px 0; }
+    .vusuelle_mini { flex-direction: column; height: auto; gap: 20px; }
+    .mini_fils, .mini_bos { width: 90%; }
+    
+    .vusuelle_maxi_PLATE { 
+        flex-direction: column; 
+        height: auto !important; 
+        background: #fff;
+        margin: 15px auto;
+        width: 90%;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Ombre plus douce */
+    }
+    .vusuelle_maxi_PLATE h3 { display: none; }
+    .vusuelle_maxi_SOL { width: 100% !important; justify-content: space-between; padding: 8px 0; border-bottom: 1px dashed #eee; }
+    .vusuelle_maxi_SOL:last-child { border-bottom: none; }
+    .vusuelle_maxi_SOL span { padding: 0; font-weight: 600; }
+    .vusuelle_maxi_SOL_RARA { width: 100% !important; margin: 15px 0; justify-content: center; }
+
+    /* Footer */
+    footer { height: auto !important; flex-direction: column; padding: 40px 10px; gap: 40px; text-align: center; }
+    .flex { width: 100%; height: auto; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 25px; }
+    .flex:last-child { border-bottom: none; }
+}
+
+/* --- 4. PETITES TOUCHES FINALES --- */
+.Statistique_image { background-attachment: scroll; background-position: center; } 
+button { transition: all 0.3s ease; cursor: pointer; }
+button:hover { opacity: 0.85; }
+button:active { transform: scale(0.96); }
