@@ -6,7 +6,7 @@
 
 body {
     height: 120vh;
-    background-color: #F8F9FB;
+    background-color: #FFFFFF;
 }
 
 header {
@@ -238,7 +238,7 @@ header {
 
 }
 
-#Déclencher{
+#Déclencher {
     height: 400px;
     width: 100%;
     background-color: #FFFFFF;
@@ -246,72 +246,307 @@ header {
     display: flex;
     align-items: center;
 }
-.Remonter{
-height:80% ;
-width:30%;
-  display: flex;
+
+.Remonter {
+    height: 80%;
+    width: 30%;
+    display: flex;
     flex-direction: column;
     gap: 10px;
-background-color: #DEEAF8;
-border-radius: 10px;
+    background-color: #DEEAF8;
+    border-radius: 10px;
 }
-.Emporter{
-height: 69%;
-width:55% ;
-background-color: #F3F4F6;
-display: flex;
-  align-items: center;
-  justify-content: space-around;
+
+.Emporter {
+    height: 69%;
+    width: 55%;
+    background-color: #F3F4F6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 
 
 }
-.Remonter i{
-font-size: 37px;
-color: red;
-padding: 30px;
-}
-.Remonter h5{
 
-font-size:20px ;
-padding: 17px;
+.Remonter i {
+    font-size: 37px;
+    color: red;
+    padding: 30px;
 }
-.Remonter p{
+
+.Remonter h5 {
+
+    font-size: 20px;
+    padding: 17px;
+}
+
+.Remonter p {
     font-size: 17px;
-padding: 17px;
+    padding: 17px;
 }
-.Opprobre{
-height: 75%;
-width: 30%;
- 
+
+.Opprobre {
+    height: 75%;
+    width: 30%;
+
 
 }
+
 .Opprobre img {
-height: 100%;
-width: 100%;
-border-radius: 7px;
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
 }
-.Sycophante{
-height: 60%;
-width: 55%;
+
+.Sycophante {
+    height: 60%;
+    width: 55%;
 }
-.Sycophante  h5{
- font-size: 17px;
- padding: 8px;
+
+.Sycophante h5 {
+    font-size: 17px;
+    padding: 8px;
 }
-.Sycophante p{
+
+.Sycophante p {
     font-style: 12px;
     padding: 8px;
 }
-.Sycophante a{
+
+.Sycophante a {
     padding: 14px;
 }
-.Sycophante  button{
+
+.Sycophante button {
     padding: 10px;
- border: transparent;
- background-color: #d9f0e3;
- border-radius: 5px;
+    border: transparent;
+    background-color: #d9f0e3;
+    border-radius: 5px;
 
 }
-.Sycophante  span{
+
+.Sycophante span {
     color: #03612E;
 }
+
+#Billeve {
+    height: 140px;
+    width: 70%;
+    margin-top: 40px;
+    margin: 40px auto;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+#Billeve h3 {
+
+    font-size: 25px;
+    padding: 10px;
+
+}
+
+#Billeve p {
+    font-size: 17px;
+
+}
+#Opprobre{
+height: 550px;
+width: 80%;
+margin: 0 auto;
+display: flex;
+align-items: end;
+justify-content: center;
+background-image: url(./IMAGES/docteur.avif);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+.APPEL{
+    height: 15%;
+    width: 50%;
+    background-color: #1e1a198d;
+    margin: 60px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+border-radius: 10px;
+}
+.coruscante{
+    height:50% ;
+    width: 12%;
+    /* background-color: #ffffff7a; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+}
+.coruscante_appele{
+    height:50% ;
+    width: 12%;
+    background-color: #ff00007a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+}
+.coruscante i{
+    font-size: 23px;
+    color: #FFFFFF;
+}
+.coruscante_appele i{
+     font-size: 23px;
+    color: #FFFFFF;
+    
+}
+#Barguigner{
+    height: 680px;
+    width: 100%;
+    background-color: #EDEEF0;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Trottinette{
+height: 95%;
+width: 30%;
+display: flex;
+align-items: center;
+flex-direction: column;
+gap: 5px;
+
+
+}
+.Faune{
+height: 100%;
+width: 50%;
+display: flex;
+flex-direction: column;
+gap: 20px;
+align-items: center;
+}
+.Trottinette_texte{
+    height: 60%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+padding: 10px;
+}
+.Trottinette_texte h3{
+font-size: 20px;
+padding: 5px;
+}
+.Trottinette_texte p{
+padding: 3px;
+font-size: 15px;
+}
+
+.Trottinette_flexe{
+    height: 37%;
+    width: 86%;
+     display: flex;
+     flex-direction: column;
+   gap: 15px;
+   justify-content: center;
+}
+.Coccyx{
+    height: 40%;
+    width: 90%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.volontiers{
+    height:49% ;
+    width:17% ;
+    background-color: #E3FFEC;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Écoresponsable{
+    height: 90%;
+    width: 76%;
+}
+.Écoresponsable p{
+    padding: 5px;
+}
+.volontiers_BOXE{
+    height:49% ;
+    width:17% ;
+    background-color: #F5EEE4;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Écoresponsable_BASE{
+    height: 90%;
+    width: 76%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.Écoresponsable_BASE p{
+    padding: 5px;
+}
+.Fulgurant{
+    height: 18%;
+    width: 90%;
+    margin-top: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+.Fulgurant h6 {
+    font-size: 13px;
+    padding: 6px;
+}
+.Fulgurant p{
+    font-size: 13px;
+    padding: 6px;
+}
+
+footer{
+    height: 400px;
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    background-color: #e4e4e671;
+    margin-top: 55px;
+    align-items:   center
+    
+}
+.flex{
+    height: 75%;
+    width: 22%;
+      background-color: #e4e4e621;
+      text-align: center;
+
+}
+.flex h3{
+    font-size: 25px;
+    padding: 15px;
+}
+.flex h3 span{
+    color: #49D085;
+}
+.flex p{
+    font-size: 19px;
+    margin-top: 30px;
+}
+.flex h4{
+    font-size: 19px;
+    margin-top: 30px;
+}
+.flex i{
+     font-size: 25px;
+    margin-top: 30px;
+}
+
