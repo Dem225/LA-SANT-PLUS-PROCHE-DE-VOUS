@@ -1,0 +1,317 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 120vh;
+    background-color: #F8F9FB;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#LOGO img {
+    width: 90px;
+    height: 90px;
+
+    margin: 5px;
+}
+
+#liste {
+    height: 80%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+}
+
+#Connexions {
+    width: 20%;
+    height: 80%;
+    margin: 7px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#liste a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#liste li {
+    list-style: none;
+}
+
+.Sou_connexions_base button {
+    height: 40px;
+    width: 110px;
+    border: transparent;
+    background-color: #036929;
+    font-size: 10px;
+    color: white;
+    border-radius: 10px;
+    margin: 20px;
+    border: 1px solid black;
+}
+
+#OEUVRE {
+    height: 500px;
+    width: 100%;
+    background-color: #2AA562;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#innovation {
+    height: 77%;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#angele {
+    height: 50%;
+    width: 30%;
+}
+
+#angele img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.innovation_grand {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.innovation_petie {
+    height: 20%;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.innovation_grand button {
+    height: 37px;
+    width: 180px;
+    border: transparent;
+    border-radius: 10px;
+    background-color: #83F99D;
+    margin-top: 20px;
+
+
+}
+
+.innovation_grand a {
+    padding: 15px;
+}
+
+.innovation_grand p {
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 17px;
+}
+
+.innovation_grand h3 {
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 22px;
+}
+
+.innovation_petie_box {
+    height: 60%;
+    width: 35%;
+
+}
+
+.innovation_petie_flxe {
+    height: 60%;
+    width: 35%;
+
+
+}
+
+.innovation_petie_flxe button {
+    height: 100%;
+    width: 100%;
+    border: transparent;
+    background-color: #50AD79;
+    border-radius: 5px;
+}
+
+.innovation_petie_box button {
+    height: 100%;
+    width: 100%;
+    border: transparent;
+    background-color: #F98302;
+    border-radius: 5px;
+}
+
+#sanitaire {
+    height: 300px;
+    width: 100%;
+
+    background-color: #FFFFFF;
+
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+}
+
+.sanitaire_Nationale {
+    height: 70%;
+    width: 40%;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+}
+
+.sanitaire_Urgence {
+    height: 70%;
+    width: 30%;
+    background-color: #f9f6f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.sanitaire_Nationale i {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.sanitaire_Nationale h4 {
+    font-size: 20px;
+    padding: 8px;
+}
+
+.sanitaire_Nationale p {
+    font-size: 17px;
+    padding: 7px;
+}
+
+.sanitaire_Urgence i {
+    font-size: 35px;
+
+    color: red;
+}
+
+.sanitaire_Urgence h5 {
+    font-size: 18px;
+    padding: 7%;
+
+}
+
+.sanitaire_Urgence p {
+    font-size: 16px;
+
+
+}
+
+#Déclencher{
+    height: 400px;
+    width: 100%;
+    background-color: #FFFFFF;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+.Remonter{
+height:80% ;
+width:30%;
+  display: flex;
+    flex-direction: column;
+    gap: 10px;
+background-color: #DEEAF8;
+border-radius: 10px;
+}
+.Emporter{
+height: 69%;
+width:55% ;
+background-color: #F3F4F6;
+display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+
+}
+.Remonter i{
+font-size: 37px;
+color: red;
+padding: 30px;
+}
+.Remonter h5{
+
+font-size:20px ;
+padding: 17px;
+}
+.Remonter p{
+    font-size: 17px;
+padding: 17px;
+}
+.Opprobre{
+height: 75%;
+width: 30%;
+ 
+
+}
+.Opprobre img {
+height: 100%;
+width: 100%;
+border-radius: 7px;
+}
+.Sycophante{
+height: 60%;
+width: 55%;
+}
+.Sycophante  h5{
+ font-size: 17px;
+ padding: 8px;
+}
+.Sycophante p{
+    font-style: 12px;
+    padding: 8px;
+}
+.Sycophante a{
+    padding: 14px;
+}
+.Sycophante  button{
+    padding: 10px;
+ border: transparent;
+ background-color: #d9f0e3;
+ border-radius: 5px;
+
+}
+.Sycophante  span{
+    color: #03612E;
+}
