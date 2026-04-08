@@ -217,3 +217,12 @@ text-decoration: none;
     width: 100%;
     border-radius: 14px;
 }
+
+.Fournier{
+    height: 56px;
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
