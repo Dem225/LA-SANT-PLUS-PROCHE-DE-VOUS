@@ -59,3 +59,161 @@ text-decoration: none;
    margin: 20px;
    border: 1px solid black;
 }
+#GAILLARD{
+    height:360px ;
+    width: 55%;
+    background-color: #005323;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 30px;
+
+    
+}
+.flex_texte{
+    height: 55%;
+    width: 47%;
+    margin: 20px;
+}
+.Flex_recherche{
+    height: 20%;
+    width: 45%;
+ margin: 20px;
+ margin-top: 40px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.formulaire{
+    height: 48%;
+    width: 37%;
+     display: flex;
+     border: transparent;
+     border-radius: 10px;
+}
+.formulaire input{
+    height: 100%;
+    width: 100%;
+     border-radius: 6px;
+      border: transparent;
+
+}
+.lencement{
+    height: 60%;
+    width: 25%;
+}
+.lencement button{
+    height: 100%;
+    width: 100%;
+    border: transparent;
+    background-color: #954A00;
+    border-radius: 10px;
+}
+.flex_texte h1 {
+    padding: 13px;
+    color: white;
+}
+.flex_texte p {
+     padding: 13px;
+    color: white;
+}
+.ROBERT{
+    height: 100px;
+    width: 100%;
+    margin-top: 50px;
+    margin: 50px auto;
+    display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+.ROBERT_texte{
+    height: 100%;
+    width: 25%;
+    
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ROBERT_liens {
+     height: 100%;
+    width: 20%;
+   display: flex;
+   align-items:   center
+}
+
+.ROBERT_liens a{
+    text-decoration: none;
+    color: #036929;
+    padding: 80px;
+}
+#DURAND{
+    height: 750px;
+    width: 70%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 90px;
+}
+.DURAND_vidieo{
+    height: 58%;
+    width: 35%;
+}
+.DURAND_vidieo video{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.DURAND_consiel{
+    Height: 100%;
+    width:40%;
+  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.consiel_ante{
+    height: 48%;
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 7px;
+    
+    
+    
+}
+.consiel_hygerne{
+     height: 49%;
+    width: 100%;
+
+         display: flex;
+    align-items:   center;
+        flex-direction: column;
+        gap: 7px;
+    
+}
+.ante_image  {
+    height: 63%;
+    width: 74%;
+     margin-top: 40.5px;
+     border-radius: 14px;
+}
+.ante_texte{
+    height: 25%;
+    width: 70%;
+
+    
+}
+.ante_texte p{
+    font-size: 17px;
+    
+}
+.ante_image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 14px;
+}
