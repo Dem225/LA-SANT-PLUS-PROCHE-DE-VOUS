@@ -367,6 +367,10 @@ header {
     width: 80%;
 
 }
+.Statistique_box img{
+    height: 100%;
+    width: 100%;
+}
 
 .Statistique_petie {
     height: 10%;
