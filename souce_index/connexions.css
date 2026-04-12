@@ -187,3 +187,95 @@ header {
     margin: 20px;
 
 }
+
+
+
+/* --- RESPONSIVE OPTIMISÉ (HEADER + FORMULAIRE) --- */
+
+@media screen and (max-width: 1024px) {
+    header {
+        height: auto; /* Permet au header de s'adapter au contenu empilé */
+        flex-direction: column;
+        padding: 15px 0;
+        gap: 15px;
+    }
+
+    #liste {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap; /* Les liens passent à la ligne si l'écran est trop étroit */
+        gap: 15px;
+    }
+
+    #Connexions {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+
+    /* On s'assure que la section de connexion prend bien toute la place restante */
+    section {
+        min-height: calc(100vh - 100px); 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .form-box {
+        width: 90%; /* Le formulaire s'adapte à la largeur du téléphone */
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .input-box {
+        width: 100%; /* Les champs prennent toute la largeur du formulaire */
+    }
+
+    #liste a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #liste {
+        gap: 10px;
+    }
+
+    #liste a {
+        font-size: 12px; /* Un peu plus petit pour les mini-écrans */
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    #LOGO img {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .forget {
+        flex-direction: column; /* "Sauvegarder" et "Mot de passe" l'un sur l'autre */
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* CRITIQUE : empêche les paddings de faire déborder les boîtes */
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Sécurité anti-mouvement gauche/droite */
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* --- RESPONSIVE DESIGN TOTALEMENT OPTIMISÉ --- */

@@ -550,3 +550,149 @@ footer{
     margin-top: 30px;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* CRITIQUE : empêche les paddings de faire déborder les boîtes */
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Sécurité anti-mouvement gauche/droite */
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* --- RESPONSIVE DESIGN TOTALEMENT OPTIMISÉ --- */
+
+/* Tablettes et Mobiles (Largeur max 1024px) */
+@media screen and (max-width: 1024px) {
+    
+    /* On ajuste le header pour qu'il soit flexible */
+    header {
+        height: auto;
+        min-height: 100px;
+        flex-direction: column; /* On empile Logo / Menu / Bouton */
+        padding: 20px;
+        gap: 15px;
+    }
+
+    #LOGO {
+        margin: 0;
+    }
+
+    /* Le menu liste devient visible et se centre */
+    #liste {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Si trop de liens, ils vont à la ligne proprement */
+        gap: 15px;
+    }
+
+    #Connexions {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+
+    /* Section OEUVRE / Innovation */
+    #OEUVRE {
+        height: auto;
+        padding: 40px 15px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #innovation {
+        width: 100%;
+    }
+
+    .innovation_petie {
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #angele {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    /* Sections Sanitaire et Déclencher */
+    #sanitaire, #Déclencher {
+        height: auto;
+        flex-direction: column;
+        padding: 30px 15px;
+        gap: 20px;
+    }
+
+    .sanitaire_Nationale, .sanitaire_Urgence, .Remonter, .Emporter {
+        width: 100% !important;
+        margin: 0;
+    }
+
+    /* Section FAQ et Guide CMU */
+    #Barguigner {
+        height: auto;
+        flex-direction: column;
+        padding: 30px 15px;
+    }
+
+    .Trottinette, .Faune {
+        width: 100%;
+    }
+
+    /* Footer */
+    footer {
+        height: auto;
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .flex {
+        width: 100% !important;
+    }
+}
+
+/* Mobiles (Largeur max 480px) */
+@media screen and (max-width: 480px) {
+    #liste a {
+        font-size: 14px; /* Un peu plus petit pour que ça passe sur une ligne */
+    }
+
+    .innovation_grand h3 {
+        font-size: 1.2rem;
+    }
+
+    .innovation_petie {
+        flex-direction: column;
+    }
+
+    .innovation_petie_box, .innovation_petie_flxe {
+        width: 100%;
+        height: 50px;
+    }
+
+    #Opprobre {
+        height: 350px;
+        width: 100%;
+    }
+
+    .APPEL {
+        width: 95%;
+        margin: 10px auto;
+        flex-wrap: wrap; /* Les icônes d'appel s'adaptent */
+    }
+
+    .Fulgurant {
+        height: auto;
+        margin: 10px 0;
+        padding: 10px;
+    }
+}

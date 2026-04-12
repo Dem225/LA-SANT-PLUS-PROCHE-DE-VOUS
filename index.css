@@ -463,163 +463,98 @@ footer{
     margin-top: 30px;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box; /* Force le padding à rester à l'intérieur de la largeur */
+}
 
-/* --- RESPONSIVE DESIGN OPTIMISÉ --- */
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Empêche le scroll horizontal */
+    position: relative;
+    -webkit-overflow-scrolling: touch; /* Fluidité sur iOS */
+}
 
-/* Ajustements pour Tablettes et Mobiles (max 1024px) */
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* --- RESPONSIVE DESIGN --- */
+
+/* Pour Tablettes (768px à 1024px) */
 @media screen and (max-width: 1024px) {
-    header  {
+    header {
         height: auto;
-        display: flex;
-        padding: 20px;
-        gap: 20px;
-    }
-
-    #liste {
-        width: 100%;
-        height: auto;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
- #burger-icon {
-        display: block; /* Visible sur Mobile */
-        font-size: 30px;
-        color: #036929;
-        cursor: pointer;
-    }
-    #Connexions {
-        width: 100%;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    #bienvenue {
-        height: auto; /* Supprime le 700px fixe */
-        padding: 40px 0;
-    }
-
-    .box_texte {
-        width: 90%;
-        margin: 40px auto;
-        height: auto;
-        gap: 20px;
-    }
-
-    .box_case {
-        width: 90%;
-        height: auto;
-        flex-direction: column;
-        padding: 20px;
+        flex-direction: column; /* On empile si c'est trop serré */
+        padding: 15px;
         gap: 15px;
-        margin: 0 auto;
     }
 
-    .information {
+    #burger-icon {
+        display: block; /* Toujours visible sur tablette/mobile */
+        font-size: 2rem;
+        color: #036929;
+    }
+
+    #liste, #Connexions {
         width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
-    nav {
+    .box_case, .UrGente, .Espace, .box_texte {
+        width: 95% !important; /* Utilise 95% pour laisser une petite marge de sécurité */
+        margin-left: auto !important;
+        margin-right: auto !important;
+        height: auto;
+    }
+
+    nav, #Sante, footer {
         height: auto;
         flex-direction: column;
-        padding: 50px 20px;
-        gap: 30px;
-    }
-
-    .impacte, .BOX_impacte {
-        width: 100% !important;
-        height: auto;
-        margin: 0 !important;
-        padding: 20px;
-    }
-
-    #Sante {
-        height: auto;
-        flex-direction: column;
-        padding: 40px 0;
-    }
-
-    .UrGente, .Espace {
-        width: 90% !important;
-        height: auto;
-        margin: 20px auto !important;
-    }
-
-    .Box_urgent {
-        margin-top: 20px;
-    }
-
-    footer {
-        height: auto;
-        flex-direction: column;
-        padding: 40px 20px;
-        gap: 40px;
-    }
-
-    .flex {
-        width: 100% !important;
-        height: auto;
+        padding: 30px 15px;
+        gap: 20px;
     }
 }
 
-/* Ajustements spécifiques pour Mobiles (max 480px) */
+/* Pour Mobiles (max 480px) - Le plus important pour que ça ne bouge pas */
 @media screen and (max-width: 480px) {
-    .box_texte h4 {
-        font-size: 20px;
-    }
+    /* Typographie */
+    .box_texte h4 { font-size: 1.2rem; }
+    .box_texte h5 { font-size: 1rem; }
 
-    .box_texte h5 {
-        font-size: 16px;
-    }
-
-    .flexe_cum {
-        flex-direction: column;
-        height: auto;
+    /* Conteneurs Flex */
+    .flexe_cum, #UG_medicale, .téléphne, .flex {
+        display: flex;
+        flex-direction: column !important;
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 !important;
+        padding: 15px !important;
         gap: 15px;
     }
 
-    .box_flexe_cum, .box_flexe_cum_titre {
-        width: 100%;
-        height: auto;
-        margin: 0;
-        padding: 15px;
+    /* Supprimer les paddings/marges qui poussent vers la droite */
+    .box_flexe_cum, .box_flexe_cum_titre, .impacte, .BOX_impacte {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 10px;
     }
 
     #UG_medicale {
-        width: 95%;
-        height: auto;
-        flex-direction: column;
-        padding: 20px;
-        gap: 15px;
+        width: 100% !important; /* On remplit tout pour éviter le vide */
+        border-radius: 0; /* Optionnel : plus propre sur tout petit écran */
     }
 
-    .téléphne {
-        width: 100%;
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-        margin: 0;
-    }
-
+    /* Bouton d'appel ergonomique */
     .Appel {
-        width: 150px;
-        height: 50px;
+        width: 100%; /* Largeur pleine pour cliquer avec le pouce */
+        max-width: 280px; 
+        height: 55px;
+        margin: 0 auto;
+        display: flex;
         justify-content: center;
+        align-items: center;
     }
-
-    .Appel p {
-        padding: 5px;
-    }
-}
-html, body {
-    max-width: 100%;
-    overflow-x: hidden; /* Empêche le site de bouger à gauche ou à droite */
-    position: relative;
-}
-
-#burger-icon {
-    display: none; /* Caché sur PC */
-}
-
-@media screen and (max-width: 768px) {
-   
 }
