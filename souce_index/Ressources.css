@@ -648,29 +648,9 @@ footer{
 
 /* Ajustements pour Tablettes et Mobiles (max 1024px) */
 @media screen and (max-width: 1024px) {
-    header {
-        height: auto; /* Permet au header de s'agrandir si le menu passe en dessous */
-        flex-direction: column; /* Empile le logo, le menu et le bouton */
-        padding: 15px 0;
-        gap: 15px;
-    }
-
-    #LOGO img {
-        margin: 0;
-    }
-
-    #liste {
-        width: 100%;
-        height: auto;
-        gap: 15px;
-        flex-wrap: wrap; /* Les liens passent à la ligne si besoin */
-    }
-
-    #Connexions {
-        width: 100%;
-        justify-content: center;
-        margin: 0;
-    }
+    header { height: auto; padding: 15px; flex-wrap: wrap; justify-content: center; }
+    #liste { width: 100%; order: 3; justify-content: center; margin-top: 15px; flex-wrap: wrap; }
+    #Connexions { width: auto; order: 2; margin: 0; }
 
     #GAILLARD {
         width: 90%; /* On élargit le bloc vert pour mobile */

@@ -216,7 +216,8 @@ background-color: #F8F9FB;
 }
 .Service h3{
     color: black;
-    font-size: 35px;
+    font-size: 30px;
+    padding: 10px;
     
 }
 #Sante{
@@ -255,7 +256,7 @@ background-color: #F8F9FB;
 .Box_urgent{
     Height:70% ;
     width:90%;
-    margin-top: 100px;
+    margin-top: 10px;
     gap: 24px;
     display: flex;
     flex-direction: column;
@@ -326,48 +327,48 @@ border-radius: 15px;
 
 .CUM i{
     font-size: 30px;
-    padding: 13px;
+    padding: 5px;
 }
 .CUM h3{
     font-size: 20px;
-     padding: 12px;
+     padding: 5px;
 }
 .CUM p{
     font-size: 15px;
-     padding: 12px;
+     padding: 5px;
 }
 .box_flexe_cum h2{
-    font-size: 26px;
-  padding: 17px;
+    font-size: 22px;
+  padding: 5px;
 }
 .box_flexe_cum p{
      font-size: 20px;
-  padding: 17px;
+  padding: 5px;
 }
 .box_flexe_cum i{
     font-size: 40px;
-    padding: 10px ;
+    padding: 5px ;
 }
 .box_flexe_cum h3{
-    font-size: 25px;
-     padding: 10px ;
+    font-size: 22px;
+     padding: 5px ;
 }
 .box_flexe_cum span{
     font-size: 17px;
-     padding: 10px ;
+     padding: 5px ;
 }
 
 .box_flexe_cum_titre i{
     font-size: 40px;
-    padding: 10px ;
+    padding: 5px ;
 }
 .box_flexe_cum_titre h3{
-    font-size: 25px;
-     padding: 10px ;
+    font-size: 22px;
+     padding: 5px ;
 }
 .box_flexe_cum_titre span{
-    font-size: 17px;
-     padding: 10px;
+    font-size: 15px;
+     padding: 5px;
     
 }
 .box_flexe_cum_titre  a{
@@ -480,29 +481,28 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 /* --- RESPONSIVE DESIGN --- */
+
+/* --- 1. GLOBAUX adjustments --- */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    height: auto !important;
+    scroll-behavior: smooth; /* Navigation plus douce */
+}
 
 /* Pour Tablettes (768px à 1024px) */
 @media screen and (max-width: 1024px) {
-    header {
-        height: auto;
-        flex-direction: column; /* On empile si c'est trop serré */
-        padding: 15px;
-        gap: 15px;
-    }
+    header { height: auto; padding: 15px; flex-wrap: wrap; justify-content: center; }
+    #liste { width: 100%; order: 3; justify-content: center; margin-top: 15px; flex-wrap: wrap; }
+    #Connexions { width: auto; order: 2; margin: 0; }
 
     #burger-icon {
         display: block; /* Toujours visible sur tablette/mobile */
         font-size: 2rem;
         color: #036929;
     }
-
-    #liste, #Connexions {
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
     .box_case, .UrGente, .Espace, .box_texte {
         width: 95% !important; /* Utilise 95% pour laisser une petite marge de sécurité */
         margin-left: auto !important;
@@ -539,7 +539,7 @@ img {
     .box_flexe_cum, .box_flexe_cum_titre, .impacte, .BOX_impacte {
         width: 100% !important;
         margin: 0 !important;
-        padding: 10px;
+        padding: 5px;
     }
 
     #UG_medicale {

@@ -573,31 +573,9 @@ img {
 @media screen and (max-width: 1024px) {
     
     /* On ajuste le header pour qu'il soit flexible */
-    header {
-        height: auto;
-        min-height: 100px;
-        flex-direction: column; /* On empile Logo / Menu / Bouton */
-        padding: 20px;
-        gap: 15px;
-    }
-
-    #LOGO {
-        margin: 0;
-    }
-
-    /* Le menu liste devient visible et se centre */
-    #liste {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap; /* Si trop de liens, ils vont à la ligne proprement */
-        gap: 15px;
-    }
-
-    #Connexions {
-        width: 100%;
-        justify-content: center;
-        margin: 0;
+   header { height: auto; padding: 15px; flex-wrap: wrap; justify-content: center; }
+    #liste { width: 100%; order: 3; justify-content: center; margin-top: 15px; flex-wrap: wrap; }
+    #Connexions { width: auto; order: 2; margin: 0; }
     }
 
     /* Section OEUVRE / Innovation */
