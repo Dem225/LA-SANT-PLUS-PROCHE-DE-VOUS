@@ -139,7 +139,7 @@ padding: 20px;
     
 }
 
-nav{
+#ACUEIL{
     height: 400px;
     width: 100%;
     background-color: #F8F9FB;
@@ -314,7 +314,7 @@ background-color: #F8F9FB;
     margin: 10px;
     display: flex;
     flex-direction: column;
-border-radius: 15px;
+border-radius: 10px;
 }
 .box_flexe_cum_titre{
      height: 90%;
@@ -323,7 +323,7 @@ border-radius: 15px;
     margin: 10px;
     display: flex;
     flex-direction: column;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 
@@ -484,93 +484,103 @@ img {
     height: auto;
 }
 
+
 /* --- RESPONSIVE DESIGN --- */
 
-/* --- 1. GLOBAUX adjustments --- */
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-    height: auto !important;
-    scroll-behavior: smooth; /* Navigation plus douce */
-}
-
-/* Pour Tablettes (768px à 1024px) */
-@media screen and (max-width: 1024px) {
-    header { height: auto; padding: 15px; flex-wrap: wrap; justify-content: center; }
+@media screen and (max-width: 768px) {
+    /* 1. Header & Menu */
+  header { height: auto; padding: 15px; flex-wrap: wrap; justify-content: center; }
     #liste { width: 100%; order: 3; justify-content: center; margin-top: 15px; flex-wrap: wrap; }
     #Connexions { width: auto; order: 2; margin: 0; }
-
-    #burger-icon {
-        display: block; /* Toujours visible sur tablette/mobile */
-        font-size: 2rem;
-        color: #036929;
     }
-    .box_case, .UrGente, .Espace, .box_texte {
-        width: 95% !important; /* Utilise 95% pour laisser une petite marge de sécurité */
-        margin-left: auto !important;
-        margin-right: auto !important;
-        height: auto;
-    }
-
-    nav, #Sante, footer {
-        height: auto;
-        flex-direction: column;
-        padding: 30px 15px;
-        gap: 20px;
-    }
-}
-
-/* Pour Mobiles (max 480px) - Le plus important pour que ça ne bouge pas */
-@media screen and (max-width: 480px) {
-    /* Typographie */
-    .box_texte h4 { font-size: 1.2rem; }
-    .box_texte h5 { font-size: 1rem; }
-
-    /* Conteneurs Flex */
-    .flexe_cum, #UG_medicale, .téléphne{
-        display: flex;
-        flex-direction: column;
-        display: flex;
-        width: 100% !important;
-        height: auto !important;
-        margin: 0 !important;
-        padding: 15px !important;
-        gap: 19px;
-        display: flex;
-    }
-     .flex {
-        width: 100% !important;
-    }
-
-    /* Supprimer les paddings/marges qui poussent vers la droite */
-    .box_flexe_cum, .box_flexe_cum_titre, .impacte, .BOX_impacte {
-        width: 100% !important;
-        margin: 0 !important;
-        padding: 5px;
-    }
-
-    #UG_medicale {
-        width: 100% !important; /* On remplit tout pour éviter le vide */
-        border-radius: 0; /* Optionnel : plus propre sur tout petit écran */
-    }
-
-    /* Bouton d'appel ergonomique */
-    .Appel {
-        width: 100%; /* Largeur pleine pour cliquer avec le pouce */
-        max-width: 280px; 
-        height: 55px;
-        margin: 0 auto;
-        display: flex;
+    /* 2. Section ACCEUIL (Impact en chiffres) */
+    #ACUEIL {
+        display: flex !important; /* Force le flex */
+        flex-direction: column !important; /* Empile les éléments sur mobile */
+        align-items: center;
         justify-content: center;
+        height: auto !important;
+        padding: 40px 20px !important;
+        gap: 30px;
+    }
+
+    .BOX_impacte {
+        display: flex !important; /* Force le flex aussi sur les boîtes internes */
+        flex-direction: column;
+        align-items: center;
+        width: 100% !important;
+        text-align: center;
+    }
+
+    /* 3. Section Bienvenue & Recherche */
+    #bienvenue {
+        height: auto !important;
+        padding: 40px 10px !important;
+    }
+
+    .box_case {
+        flex-direction: column !important;
+        width: 90%;
+        gap: 15px;
+    }
+
+    .information, .hopital {
+        width: 100% !important;
+    }
+
+    /* 4. Section Santé & Services */
+    #Sante {
+        flex-direction: column !important;
+        height: auto !important;
+    }
+
+    .UrGente, .Espace {
+        width: 100% !important;
+        min-height: auto !important;
+        padding: 30px 15px !important;
+    }
+
+    .flexe_cum {
+        flex-direction: column !important;
+        gap: 15px;
+    }
+    .box_flexe_cum_titre{
+        width: 100%;
+    }
+    .box_flexe_cum{
+        width: 100%;
+    }
+
+    /* 5. Urgences & Footer */
+    #UG_medicale {
+        flex-direction: column !important;
+        height: auto !important;
+        padding: 20px !important;
+        gap: 15px;
+    }
+    .téléphne{
+        display: flex;
+        flex-direction: column;
+    }
+    .téléphne p{
+        display: flex;
+        width: 100%;
+        height: 40px;
+    }
+    .Appel{
+        width: 90%;
+        gap: 10px;
+    }
+
+    footer {
+        flex-direction: column !important;
+        height: auto !important;
+        padding: 40px 20px !important;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .flex {
+        width: 100% !important;
         align-items: center;
     }
-
-
-    .box_case, .information {
-        display: flex !important;
-        flex-direction: column;
-        gap: 10px;
-
-    }
-  
-}
