@@ -338,7 +338,7 @@ header {
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 22px;
     align-items: center;
     background-image: url(./IMAGES/resolution.jpg);
     background-size: cover;
@@ -513,7 +513,7 @@ header {
 .Statistique_image h3 {
     font-size: 25px;
     color: #FFFFFF;
-    padding: 15px;
+    padding: 10px;
 }
 
 .Statistique_image span {
@@ -799,7 +799,7 @@ header {
 }
 
 .maxi_SOL_LOLO button {
-    height: 60%;
+    height: 66%;
     width: 70%;
     margin-top: 10px;
     border: transparent;
@@ -878,27 +878,27 @@ html, body {
 
 /* --- 2. ADAPTATION TABLETTES (Moins de 1024px) --- */
 @media screen and (max-width: 1024px) {
-    header { height: auto; padding: 15px; flex-wrap: wrap; justify-content: center; }
+    header { height: auto; padding: 4px; flex-wrap: wrap; justify-content: center; }
     #liste { width: 100%; order: 3; justify-content: center; margin-top: 15px; flex-wrap: wrap; }
-    #Connexions { width: auto; order: 2; margin: 0; }
+    #Connexions { width: auto; order: 2; margin: 3px; }
     
     #Reginale, #Vue_globale { 
         flex-direction: column; 
         height: auto !important; 
-        padding: 40px 0;
+        padding: 10px auto;
         align-items: center;
     }
     .reginal_flexe, .reginal_box, .Statistique, .Statistique_image { 
         width: 90% !important; 
         min-height: auto !important;
-        margin-bottom: 30px;
+        margin-bottom: 34px;
     }
 }
 
 /* --- 3. ADAPTATION SMARTPHONES (Moins de 768px) --- */
 @media screen and (max-width: 768px) {
     /* Typographie plus lisible */
-    #Sante_Nationale { height: auto !important; padding: 50px 15px; text-align: center; }
+    #Sante_Nationale { height: auto !important; padding: 50px 15px; text-align: start; }
     #Sante_Nationale h4 { font-size: 22px; margin: 10px 0; }
     #Sante_Nationale p { font-size: 16px; line-height: 1.5; }
     #Sante_Nationale p br { display: none; }
@@ -912,8 +912,8 @@ html, body {
     /* Chiffres Clés (Amélioration du centrage) */
     .phase_reginal { height: auto !important; padding: 20px; width: 85%; margin: 0 auto; }
     .reginal_face { height: auto !important; width: 100%; margin-top: 20px; }
-    .souce_face_double, .souce_face_treips { flex-direction: column; align-items: center; gap: 20px; }
-    .temps { text-align: center; padding: 0 10px; }
+    .souce_face_double, .souce_face_treips { flex-direction: column; align-items: center; gap: 10px; }
+    .temps { text-align: start; padding: 0 10px; }
 
     /* TABLEAU DES RÉGIONS (Style "Card" épuré) */
     #vusuelle { height: auto !important; padding: 30px 0; }
@@ -926,7 +926,7 @@ html, body {
         background: #fff;
         margin: 15px auto;
         width: 90%;
-        border-radius: 12px;
+        border-radius: 10px;
         padding: 20px;
         box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Ombre plus douce */
     }

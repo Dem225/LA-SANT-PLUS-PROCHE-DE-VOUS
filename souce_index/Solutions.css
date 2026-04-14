@@ -570,7 +570,9 @@ img {
 /* --- RESPONSIVE DESIGN TOTALEMENT OPTIMISÉ --- */
 
 /* Tablettes et Mobiles (Largeur max 1024px) */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) 
+
+{
     
     /* On ajuste le header pour qu'il soit flexible */
    header { height: auto; padding: 15px; flex-wrap: wrap; justify-content: center; }
@@ -636,7 +638,7 @@ img {
     .flex {
         width: 100% !important;
     }
-}
+
 
 /* Mobiles (Largeur max 480px) */
 @media screen and (max-width: 480px) {

@@ -124,10 +124,10 @@ padding: 20px;
 .hopital{
     padding: 15px;
     font-size: 12px;
-    background-color: #438d6245 ;
-    border: transparent;
+    background-color: #ebf4ee4f ;
     border-radius: 15px;
     color:white;
+    border: transparent;
 }
 .information button{
     height: 45px;
@@ -136,7 +136,9 @@ padding: 20px;
     font-size: 15px;
     border-radius: 10px;
     background-color:#ed9549d7;
+    
 }
+
 nav{
     height: 400px;
     width: 100%;
@@ -525,14 +527,19 @@ html, body {
     .box_texte h5 { font-size: 1rem; }
 
     /* Conteneurs Flex */
-    .flexe_cum, #UG_medicale, .téléphne, .flex {
+    .flexe_cum, #UG_medicale, .téléphne{
         display: flex;
-        flex-direction: column !important;
+        flex-direction: column;
+        display: flex;
         width: 100% !important;
         height: auto !important;
         margin: 0 !important;
         padding: 15px !important;
-        gap: 15px;
+        gap: 19px;
+        display: flex;
+    }
+     .flex {
+        width: 100% !important;
     }
 
     /* Supprimer les paddings/marges qui poussent vers la droite */
@@ -557,4 +564,13 @@ html, body {
         justify-content: center;
         align-items: center;
     }
+
+
+    .box_case, .information {
+        display: flex !important;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+  
 }
