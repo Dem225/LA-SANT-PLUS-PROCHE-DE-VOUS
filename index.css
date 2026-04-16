@@ -308,7 +308,7 @@ background-color: #F8F9FB;
 
 .box_flexe_cum{
     height: 90%;
-    width: 45%;
+    width: 60%;
    background-color: #0159BB;
     margin: 10px;
     display: flex;
@@ -665,6 +665,12 @@ header {
         max-width: 100%;
         
     }
+        .flexe_cum {
+        flex-direction: column; /* Empile les boîtes bleues et grises */
+        height: auto;
+        padding: 10px;
+        
+    }
 }/* --- Mobile Mode (600px et moins) --- */
 /* --- Mode Mobile (600px et moins) --- */
 @media screen and (max-width: 600px) {
@@ -709,6 +715,7 @@ header {
     .flexe_cum {
         flex-direction: column; /* Empile les boîtes bleues et grises */
         height: auto;
+        
     }
 
     /* 4. Ton bloc spécifique : Boîtes Cum & Titres */

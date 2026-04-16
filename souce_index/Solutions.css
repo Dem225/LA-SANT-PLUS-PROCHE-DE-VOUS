@@ -569,76 +569,105 @@ img {
 }
 /* --- RESPONSIVE DESIGN TOTALEMENT OPTIMISÉ --- */
 
-/* Tablettes et Mobiles (Largeur max 1024px) */
-@media screen and (max-width: 1024px) 
-
-{
+/* --- tables ET MOBILES (Max 1024px) --- */
+@media screen and (max-width: 1024px) {
     
-    /* On ajuste le header pour qu'il soit flexible */
-   header { height: auto; padding: 15px; flex-wrap: wrap; justify-content: center; }
+    /* 1. Header Statique & Propre */
+    
+    
+     header { height: auto; padding: 4px; flex-wrap: wrap; justify-content: center; }
     #liste { width: 100%; order: 3; justify-content: center; margin-top: 15px; flex-wrap: wrap; }
-    #Connexions { width: auto; order: 2; margin: 0; }
-    }
-
-    /* Section OEUVRE / Innovation */
+    #Connexions { width: auto; order: 2; margin: 3px; }
+    /* 2. Section OEUVRE / Innovation (Stable) */
     #OEUVRE {
         height: auto;
-        padding: 40px 15px;
+        padding: 40px 5%;
+        display: flex;
         flex-direction: column;
+        align-items: center;
         text-align: center;
+        gap: 30px;
     }
 
     #innovation {
         width: 100%;
+        max-width: 600px; /* Empêche le texte de s'étaler trop */
     }
 
     .innovation_petie {
         width: 100%;
+        display: flex;
         justify-content: center;
-        gap: 10px;
+        flex-wrap: wrap;
+        gap: 15px;
     }
 
     #angele {
-        width: 80%;
-        margin-top: 20px;
+        width: 100%;
+        max-width: 400px; /* On fixe l'image pour qu'elle ne bouge plus */
+        height: auto;
+        margin: 0 auto;
     }
 
-    /* Sections Sanitaire et Déclencher */
+    /* 3. Sections Sanitaire et Déclencher (Alignement Fixe) */
     #sanitaire, #Déclencher {
         height: auto;
+        display: flex;
         flex-direction: column;
-        padding: 30px 15px;
-        gap: 20px;
+        padding: 40px 20px;
+        gap: 25px;
     }
 
-    .sanitaire_Nationale, .sanitaire_Urgence, .Remonter, .Emporter {
+    /* On force les blocs à prendre toute la largeur sans déborder */
+    .sanitaire_Nationale, 
+    .sanitaire_Urgence, 
+    .Remonter, 
+    .Emporter {
         width: 100% !important;
-        margin: 0;
+        max-width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box; /* Crucial pour que le padding ne casse pas la largeur */
     }
 
-    /* Section FAQ et Guide CMU */
+    /* 4. Section FAQ / Guide CMU */
     #Barguigner {
         height: auto;
-        flex-direction: column;
-        padding: 30px 15px;
-    }
-
-    .Trottinette, .Faune {
-        width: 100%;
-    }
-
-    /* Footer */
-    footer {
-        height: auto;
+        display: flex;
         flex-direction: column;
         padding: 40px 20px;
         gap: 30px;
     }
 
-    .flex {
+    .Trottinette, .Faune {
         width: 100% !important;
+        max-width: 100%;
     }
 
+    /* 5. Footer (Organisation en colonnes) */
+    footer {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .flex {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+/* --- OPTIMISATION PETITS MOBILES (Max 480px) --- */
+@media screen and (max-width: 480px) {
+    h1 { font-size: 1.8rem; }
+    .btn-main, .btn-search { width: 100%; } /* Les boutons prennent toute la largeur */
+}
 
 /* Mobiles (Largeur max 480px) */
 @media screen and (max-width: 480px) {

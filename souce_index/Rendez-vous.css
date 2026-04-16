@@ -87,63 +87,74 @@ h1 { font-size: 2.5rem; font-weight: 800; color: var(--primary); margin: 10px 0 
 .btn-main-call { width: 100%; background: var(--primary); color: white; border: none; padding: 15px; border-radius: 10px; margin-bottom: 20px; cursor: pointer; }
 
 
-/* --- 1. ADAPTATION OF THE GLOBAL STRUCTURE --- */
-@media (max-width: 1024px) {
+/* --- 1. STABLE BASE --- */
+html, body {
+    overflow-x: hidden; /* Empêche tout mouvement latéral parasite */
+    width: 100%;
+    position: relative;
+}
+
+/* --- 2. LAYOUT PRINCIPAL --- */
+.container {
+    display: grid;
+    grid-template-columns: 240px 1fr; /* Desktop par défaut */
+    min-height: 100vh;
+}
+
+/* --- 3. RESPONSIVE POUR TABLETTES & MOBILES (Max 1024px) --- */
+@media screen and (max-width: 1024px) {
     .container {
-        grid-template-columns: 1fr; /* Sidebar passe en haut ou devient un menu */
-        height: auto;
+        display: flex;
+        flex-direction: column; /* On empile verticalement pour la stabilité */
     }
 
+    /* Sidebar devient un Header Fixe */
     .sidebar {
         width: 100%;
         height: auto;
-        padding: 1rem;
+        padding: 10px 20px;
         border-right: none;
         border-bottom: 1px solid #e2e8f0;
+        position: sticky; /* Reste en haut au scroll sans bouger */
+        top: 0;
+        z-index: 1000;
+        background: #fff;
     }
 
+    .logo, .doctor-profile, .sidebar-bottom {
+        display: none; /* On épure pour gagner de la place */
+    }
+
+    /* Navigation horizontale fluide et stable */
     .nav {
         display: flex;
-        overflow-x: auto; /* Permet de swiper le menu sur mobile */
+        flex-direction: row;
         gap: 10px;
+        overflow-x: auto;
+        scrollbar-width: none;
         padding: 5px 0;
-        scrollbar-width: none; /* Cache la scrollbar sur Firefox */
     }
 
-    .nav::-webkit-scrollbar { display: none; } /* Cache la scrollbar sur Chrome/Safari */
+    .nav::-webkit-scrollbar { display: none; }
 
     .nav a {
-        white-space: nowrap; /* Empêche le texte de revenir à la ligne */
-        margin-bottom: 0;
+        white-space: nowrap; /* Empêche le texte de sauter à la ligne */
+        flex-shrink: 0;      /* Verrouille la taille des liens */
+        padding: 8px 15px;
     }
 
-    .sidebar-bottom, .doctor-profile {
-        display: none; /* On épure la sidebar mobile */
-    }
-}
-
-/* --- 2. HEADER ET BARRE DE RECHERCHE (HERO) --- */
-@media (max-width: 850px) {
+    /* Zone de contenu */
     .main-content {
         padding: 20px;
+        margin-top: 0;
     }
 
-    h1 {
-        font-size: 1.8rem;
-        text-align: center;
-    }
-
-    .top-nav {
-        flex-direction: column;
-        gap: 15px;
-        height: auto;
-        margin-bottom: 30px;
-    }
-
+    /* Barre de recherche empilée proprement */
     .search-bar {
         flex-direction: column;
         background: transparent;
         box-shadow: none;
+        padding: 0;
         gap: 10px;
     }
 
@@ -152,132 +163,73 @@ h1 { font-size: 2.5rem; font-weight: 800; color: var(--primary); margin: 10px 0 
         border-radius: 12px;
         border-right: none;
         box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        height: 55px; /* Hauteur fixe pour éviter les sauts */
     }
 
     .btn-search {
         width: 100%;
-        padding: 15px;
-        font-size: 1rem;
+        height: 55px;
     }
-}
 
-/* --- 3. FILTRES ET GRILLE DE DOCTEURS --- */
-@media (max-width: 768px) {
+    /* Grille de contenu (Filtres + Résultats) */
     .content-layout {
-        grid-template-columns: 1fr; /* Filtres au-dessus des résultats */
+        grid-template-columns: 1fr; /* Une seule colonne stable */
         gap: 20px;
     }
 
     .filters {
-        display: flex;
-        flex-direction: column;
-        background: white;
-        padding: 20px;
-        border-radius: var(--radius);
+        width: 100%;
+        position: static;
     }
 
-    /* Optionnel : cacher les filtres derrière un bouton sur mobile */
     .promo-card {
-        display: none;
+        display: none; /* Évite de surcharger l'écran */
     }
 
+    /* Grille des docteurs */
     .doctors-grid {
-        grid-template-columns: 1fr; /* Une seule carte par ligne sur mobile */
+        grid-template-columns: 1fr; /* 1 carte par ligne pour éviter les décalages */
     }
 }
 
-/* --- 4. OPTIMISATION DES CARTES (PETITS MOBILES) --- */
-@media (max-width: 480px) {
+/* --- 4. OPTIMISATION PETITS MOBILES (Max 480px) --- */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
     .doc-header {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
-    .doc-info {
-        margin-top: 10px;
-    }
-
-    .availability {
-        text-align: center;
-    }
+    .doc-info { margin-top: 10px; }
 
     .doc-footer {
         flex-direction: column;
         gap: 15px;
+        text-align: center;
     }
 
     .btn-book {
         width: 100%;
-        padding: 15px;
     }
 
-    .results-header {
-        flex-direction: column;
-        gap: 10px;
-        font-size: 0.8rem;
+    /* On fixe les images pour qu'elles ne bougent plus */
+    .doc-header img {
+        width: 70px;
+        height: 70px;
+        flex-shrink: 0;
     }
 }
 
-/* --- 5. ÉCRANS ULTRA-LARGES --- */
-@media (min-width: 1600px) {
+/* --- 5. ÉCRANS ULTRA-LARGES (> 1600px) --- */
+@media screen and (min-width: 1600px) {
     .main-content {
         max-width: 1200px;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
     }
-}
-
-
-
-
-
-@media (min-width: 1025px) {
-    .sidebar {
-        position: fixed; /* La sidebar ne bouge JAMAIS au scroll */
-        height: 100vh;
-        width: 240px;
-        top: 0;
-        left: 0;
-    }
-    .main-content {
-        margin-left: 240px; /* On crée un espace fixe pour ne pas chevaucher */
-        width: calc(100% - 240px);
-    }
-}
-
-.doc-header img, .doctor-profile img {
-    aspect-ratio: 1 / 1; /* Force un carré parfait */
-    object-fit: cover;   /* Empêche l'écrasement de l'image */
-    flex-shrink: 0;      /* Empêche le conteneur de rétrécir l'image */
-}
-
-
-@media (max-width: 850px) {
-    .search-bar {
-        display: block; /* On empile proprement */
-    }
-    .search-input {
-        width: 100%;
-        height: 55px; /* Hauteur fixe pour éviter les sauts de ligne */
-        margin-bottom: 10px;
-    }
-}
-/* Empêche le texte de forcer l 'élargissement des boîtes */
-* {
-    max-width: 100vw; 
-    overflow-wrap: break-word; 
-}
-
-/* Empêche le défilement horizontal parasite */
-html, body {
-    overflow-x: hidden;
-    position: relative;
-    width: 100%;
-}
-
-/* Fixer la grille des docteurs pour qu'elle ne vacille pas */
-.doctors-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    align-items: start; /* Aligne les cartes en haut, même si elles n'ont pas la même hauteur */
 }
