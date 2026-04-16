@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinical Ethereal - Dashboard</title>
+    <link rel="stylesheet" href="./Tableau_de_Bord.css">
+</head>
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile-doctor">
+                <img src=".//presentation.jpeg" alt="Dr Aliman">
+                <div>
+                    <h3>Dr. Aliman</h3>
+                    <p>SPÉCIALISTE ABIDJAN</p>
+                </div>
+            </div>
+
+            <nav class="menu">
+                <a href="" class="active">
+                    <button>
+                        Tableau de bord
+                    </button>
+                </a>
+                <a href="./Historique.html">Historique</a>
+                <a href="./Rendez-vous.html">Rendez-vous</a>
+                <a href="">Chat</a>
+                <a href=""></a></nav>
+
+        <div class="sidebar-bottom">
+            <!-- <button class="btn-main-call">Démarrer la consultation</button> -->
+            <a href="" class="nav-item">Paramètres</a>
+            <a href="" class="nav-item">Aide</a>
+        </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-header">
+                <div>
+                    <h1>Clinical Ethereal</h1>
+                    <p>PATIENT : M. KOFFI (ABIDJAN - PLATEAU)</p>
+                </div>
+                
+            </header>
+
+            <section class="welcome-card">
+                <div class="welcome-text">
+                    <h2>Bonjour, M. Koffi</h2>
+                    <p>Prêt pour votre suivi ? Vos médecins vous attendent pour vos téléconsultations aujourd'hui.</p>
+                    <div class="welcome-actions">
+                       <a href="">
+                         <button class="btn-primary">Delete the consultation</button>
+                       </a>
+                       <a href="">
+                         <button class="btn-outline">Take des notes</button>
+                       </a>
+                        
+                     </div>
+                </div>
+                <div class="welcome-image">
+                    <img src="https://via.placeholder.com/200x120" alt="Dashboard Image">
+                </div>
+            </section>
+
+            <div class="bottom-grid">
+                <section class="appointments">
+                    <h3>Prochains rendez-vous</h3>
+                    <div class="cards-container">
+                        <div class="card card-appointment">
+                            <div class="doctor-info">
+                                <img src="https://via.placeholder.com/40" alt="Dr Kone">
+                                <div><strong>Dr. Koné</strong><br><small>GYNÉCOLOGUE</small></div>
+                            </div>
+                            <div class="date-time">
+                                <div><small>DATE</small><p>15 Octobre</p></div>
+                                <div><small>HEURE</small><p>14:30</p></div>
+                            </div>
+                            
+                            <a href="">
+                             <button class="btn-light">REJOINDRE L'APPEL</button>
+
+                            </a>
+                            
+                        </div>
+
+                        <div class="card card-appointment">
+                            <div class="doctor-info">
+                                <img src="https://via.placeholder.com/40" alt="Dr Sidibe">
+                                <div><strong>Dr. Sidibé</strong><br><small>CARDIOLOGUE</small></div>
+                            </div>
+                            <div class="date-time">
+                                <div><small>DATE</small><p>18 Octobre</p></div>
+                                <div><small>HEURE</small><p>09:15</p></div>
+                            </div>
+                            <a href="">
+                                <button class="btn-light">DÉTAILS DU RDV</button>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="history">
+                    <h3>Historique récent</h3>
+                    <div class="history-list">
+                        <div class="history-item">✔️ Consultation Générale <small>05 Oct. 2023</small></div>
+                        <div class="history-item">✔️ Suivi Gynécologique <small>22 Sept. 2023</small></div>
+                        <div class="history-item">✔️ Téléconsultation Urgente <small>10 Sept. 2023</small></div>
+                    </div>
+                    <a href="">
+                        <button class="btn-full">Voir tout l'historique</button>
+                    </a>
+                   <a href="">
+                     <button class="btn-full secondary">Télécharger le rapport annuel</button> </section>
+                   </a>
+            </div>
+        </main>
+
+        <aside class="alerts-panel">
+            <h3>Alertes & Rappels</h3>
+            <div class="alert-card blue">
+                <strong>Ordonnance disponible</strong>
+                <p>Dr. Koné a envoyé votre suivi.</p>
+                <button class="btn-small">Voir</button> </div>
+            <div class="alert-card red">
+                <strong>Rappel : Médicaments</strong>
+                <p>À prendre avant 14h00.</p>
+            </div>
+            <div class="alert-card grey">
+                <strong>Résultats d'analyses</strong>
+                <p>En attente de validation.</p>
+            </div>
+        </aside>
+    </div>
+
+    <div class="call-bar">
+        <div class="controls">
+            <button class="icon-btn">🎤</button>
+            <button class="icon-btn">📹</button>
+            <button class="icon-btn end-call">📞</button>
+        </div>
+        <span>PRÊT POUR L'APPEL</span>
+    </div>
+
+</body>
+</html>

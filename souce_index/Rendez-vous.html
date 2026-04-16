@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trouver un docteur - Clinical Ethereal</title>
+    <link rel="stylesheet" href="./Rendez-vous.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <aside class="sidebar">
+        <div class="logo">Clinical Ethereal</div>
+        <div class="doctor-profile">
+            <img src="https://via.placeholder.com/45" alt="Dr Kone">
+            <div class="meta"><strong>Dr. Koné</strong><br><small>SPÉCIALISTE ABIDJAN</small></div>
+        </div>
+        <nav class="nav">
+            <a href="./Tableau_de_Bord.html">Tableau de bord</a>
+            <a href="Historique.html">Historique</a>
+            <a href="./Rendez-vous.html" class="active" >Rendez-vous</a>
+            <a href="">Chat</a>
+        </nav>
+        
+         <div class="sidebar-bottom">
+            <!-- <button class="btn-main-call">Démarrer la consultation</button> -->
+            <a href="" class="nav-item">Paramètres</a>
+            <a href="" class="nav-item">Aide</a>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        
+
+        <section class="search-section">
+            <p class="annuaire-tag">ANNUAIRE MÉDICAL PREMIUM</p>
+            <h1>Trouvez le meilleur soin,<br>au cœur d'Abidjan.</h1>
+            
+            <div class="search-bar">
+                <div class="search-input">
+                    <span class="icon"></span>
+                    <input type="text" placeholder="Spécialité (Cardiologie, Pédia...)">
+                </div>
+                <div class="search-input">
+                    <span class="icon"></span>
+                    <input type="text" value="Abidjan">
+                </div>
+                <a href="">
+                    <button class="btn-search"> Rechercher</button>
+                </a>
+            </div>
+        </section>
+
+        <div class="content-layout">
+            <aside class="filters">
+                <h3><span>⚙️</span> Filtres</h3>
+                
+                <div class="filter-group">
+                    <label>FOURCHETTE DE PRIX</label>
+                    <div class="check-item"><input type="checkbox"> Économique (< 15k)</div>
+                    <div class="check-item"><input type="checkbox" checked> Standard (15k - 30k)</div>
+                    <div class="check-item"><input type="checkbox"> Expert (> 30k)</div>
+                </div>
+
+                <div class="filter-group">
+                    <label>LANGUES PARLÉES</label>
+                    <div class="tags">
+                        <span class="tag">Français</span>
+                        <span class="tag active">Anglais</span>
+                        <span class="tag">Baoulé</span>
+                        <span class="tag">Dioula</span>
+                    </div>
+                </div>
+
+                <div class="promo-card">
+                    <h4>Téléconsultation</h4>
+                    <p>Consultez sans vous déplacer en Côte d'Ivoire.</p>
+                    <button class="btn-white">Essayer</button>
+                </div>
+            </aside>
+
+            <section class="results">
+                <div class="results-header">
+                    <span><strong>128</strong> spécialistes disponibles à Abidjan</span>
+                    <div class="sort">TRIER PAR: <strong>Disponibilité ▾</strong></div>
+                </div>
+
+                <div class="doctors-grid">
+                    <div class="doc-card">
+                        <div class="doc-header">
+                            <img src="https://via.placeholder.com/60" alt="Dr Sarah">
+                            <div class="doc-info">
+                                <strong>Dr. Sarah Bamba <span class="rating">★ 4.9</span></strong>
+                                <p>Cardiologue • Cocody</p>
+                                <div class="lang-badges">
+                                    <span class="badge">FRANÇAIS</span>
+                                    <span class="badge">ANGLAIS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="availability green">
+                            📅 PROCHAINE DISPONIBILITÉ<br>
+                            <strong>Demain, à partir de 09:30</strong>
+                        </div>
+                        <div class="doc-footer">
+                            <div class="price"><small>CONSULTATION</small><br><strong>25 000 FCFA</strong></div>
+                            <button class="btn-book">Prendre rendez-vous</button>
+                        </div>
+                    </div>
+
+                    <div class="doc-card">
+                        <div class="doc-header">
+                            <img src="https://via.placeholder.com/60" alt="Dr Jean-Luc">
+                            <div class="doc-info">
+                                <strong>Dr. Jean-Luc Koffi <span class="rating">★ 4.8</span></strong>
+                                <p>Pédiatre • Marcory</p>
+                                <div class="lang-badges">
+                                    <span class="badge">FRANÇAIS</span>
+                                    <span class="badge">DIOULA</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="availability red">
+                            📅 PROCHAINE DISPONIBILITÉ<br>
+                            <strong>Complet jusqu'au 15 Oct.</strong>
+                        </div>
+                        <div class="doc-footer">
+                            <div class="price"><small>CONSULTATION</small><br><strong>15 000 FCFA</strong></div>
+                            <button class="btn-book">Prendre rendez-vous</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="btn-more">Voir plus de spécialistes ▾</button>
+            </section>
+        </div>
+    </main>
+</div>
+
+</body>
+</html>

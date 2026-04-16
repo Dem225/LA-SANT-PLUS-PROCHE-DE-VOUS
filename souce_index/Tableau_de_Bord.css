@@ -1,0 +1,323 @@
+:root {
+    --bg-color: #f4f7f9;
+    --sidebar-bg: #ffffff;
+    --primary-blue: #0d47a1;
+    --text-dark: #1a237e;
+    --text-grey: #757575;
+    --card-bg: #ffffff;
+    --radius: 20px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    margin: 0;
+    color: var(--text-dark);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 240px 1fr 280px;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    background: var(--sidebar-bg);
+    padding: 30px 20px;
+    border-right: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-doctor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.profile-doctor img {
+    height: 100%;
+    width: 100%;
+    border-radius: 29%;
+}
+
+.menu a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: var(--text-grey);
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.menu a.active button{
+    background: #f0f4ff;
+    color: var(--primary-blue);
+    font-weight: bold;
+    padding: 14px;
+    border-radius: 10px;
+}
+.active button{
+    height: 100%;
+    width: 100%;
+    font-weight: bold;
+     color: var(--primary-blue);
+     
+}
+
+.sidebar-footer { margin-top: auto; }
+
+/* Main Content */
+.main-content {
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+/* Welcome Card */
+.welcome-card {
+    background: white;
+    border-radius: var(--radius);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    margin-bottom: 30px;
+}
+
+.welcome-text h2 { font-size: 2rem; margin-top: 0; }
+
+.welcome-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Grille du bas */
+.bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 20px;
+}
+
+.cards-container {
+    display: flex;
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: var(--radius);
+    flex: 1;
+}
+
+.doctor-info { display: flex; gap: 10px; margin-bottom: 15px; }
+
+.date-time {
+    display: flex;
+    justify-content: space-between;
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Boutons */
+button {
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: var(--primary-blue);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid var(--primary-blue);
+    color: var(--primary-blue);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.btn-light {
+    background: #e3e8f0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+}
+
+.btn-full {
+    width: 100%;
+    padding: 12px;
+    background: #eef2f6;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Alertes à droite */
+.alerts-panel {
+    background: #f1f3f6;
+    padding: 20px;
+}
+
+.alert-card {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.alert-card.blue { border-left: 5px ; }
+.alert-card.red { border-left: 5px ; }
+
+/* Floating Call Bar */
+.call-bar {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffffff;
+    padding: 10px 30px;
+    border-radius: 50px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #1a237e;
+    color: white;
+}
+
+.end-call { background: #d32f2f; }
+
+.sidebar-bottom { margin-top: auto; }
+.btn-main-call { width: 100%; background: var(--primary); color: white; border: none; padding: 15px; border-radius: 10px; margin-bottom: 20px; cursor: pointer; }
+
+.nav-item { display: block; padding: 12px; color: var(--text-grey); text-decoration: none; border-radius: 10px; margin-bottom: 5px; }
+.nav-item.active { background: #f0f4ff; color: var(--primary); font-weight: 600; }
+.btn-main-call { width: 100%; background: var(--primary); color: white; border: none; padding: 15px; border-radius: 10px; margin-bottom: 20px; cursor: pointer; }
+
+
+
+
+
+
+/* --- BASIC ADJUSTMENTS --- */
+
+.container {
+    display: grid;
+    /* Par défaut sur mobile : une seule colonne */
+    grid-template-columns: 1fr;
+    height: auto;
+    min-height: 100vh;
+}
+
+/* --- SIDEBAR RESPONSIVE --- */
+.sidebar {
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px;
+}
+
+/* --- GRILLE PRINCIPALE --- */
+.bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Pile sur mobile */
+    gap: 20px;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column; /* Cartes l'une sous l'autre sur mobile */
+    gap: 15px;
+}
+
+/* --- PANNEAU ALERTES --- */
+.alerts-panel {
+    order: 3; /* Passe après le contenu principal sur mobile */
+}
+
+/* --- BARRE D'APPEL (Call Bar) --- */
+.call-bar {
+    width: 90%;
+    max-width: 400px;
+    padding: 10px 15px;
+    font-size: 0.8rem;
+}
+
+/* --- MEDIA QUERIES --- */
+
+/* 💻 TABLETTES ET DESKTOP (Largeur > 768px) */
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: 240px 1fr; /* Sidebar + Contenu */
+    }
+
+    .cards-container {
+        flex-direction: row; /* Cartes côte à côte */
+    }
+
+    .alerts-panel {
+        grid-column: 1 / -1; /* Prend toute la largeur en bas sur tablette */
+    }
+}
+
+/* 🖥️ GRANDS ÉCRANS (Largeur > 1100px) */
+@media (min-width: 1100px) {
+    .container {
+        grid-template-columns: 240px 1fr 280px; /* Retour au design original 3 colonnes */
+    }
+
+    .bottom-grid {
+        grid-template-columns: 1fr 300px; /* Historique à côté des RDV */
+    }
+
+    .alerts-panel {
+        grid-column: auto;
+        order: unset;
+    }
+}
+
+/* --- OPTIMISATIONS DES IMAGES ET TEXTES --- */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.welcome-card {
+    flex-direction: column;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .welcome-card {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+.welcome-text h2 {
+    font-size: clamp(1.2rem, 5vw, 2rem); /* Taille de police fluide */
+}

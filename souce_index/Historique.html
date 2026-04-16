@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinical Ethereal - Vue Docteur</title>
+  <link rel="stylesheet" href="./Historique.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="app-container">
+    <aside class="sidebar">
+        <div class="logo">Clinical Ethereal</div>
+        <div class="doctor-profile">
+            <img src="https://via.placeholder.com/50" alt="Dr Kone">
+            <div class="doctor-meta">
+                <strong>Dr. Koné</strong>
+                <small>SPÉCIALISTE ABIDJAN</small>
+            </div>
+        </div>
+        <nav class="nav-menu">
+            <a href="./Tableau_de_Bord.html" class="nav-item">Tableau de bord</a>
+            <a href="" class="nav-item active">Historique</a>
+            <a href="./Rendez-vous.html" class="nav-item">Rendez-vous</a>
+            <a href="" class="nav-item">Chat</a>
+        </nav>
+        <div class="sidebar-bottom">
+            <!-- <button class="btn-main-call">Démarrer la consultation</button> -->
+            <a href="" class="nav-item">Paramètres</a>
+            <a href="" class="nav-item">Aide</a>
+        </div>
+    </aside>
+
+    <main class="main-layout">
+       
+
+        <div class="dashboard-grid">
+            <section class="patient-list">
+                <div class="section-header">
+                    <h2>Patients du jour</h2>
+                    <span class="date">12 OCTOBRE 2023</span>
+                </div>
+                
+                <div class="patient-card status-active">
+                    <div class="card-meta">
+                        <span class="badge active">EN COURS</span>
+                        <span class="time">09:00 — Korhogo</span>
+                    </div>
+                    <h4>Moussa Traoré</h4>
+                    <p>Consultation de suivi - Diabète Type 2</p>
+                </div>
+
+                <div class="patient-card">
+                    <div class="card-meta">
+                        <span class="badge">PROCHAIN</span>
+                        <span class="time">10:30 — Odienné</span>
+                    </div>
+                    <h4>Awa Coulibaly</h4>
+                    <p>Première visite - Hypertension</p>
+                </div>
+
+                <div class="patient-card">
+                    <div class="card-meta">
+                        <span class="badge grey">ATTENTE</span>
+                        <span class="time">11:15 — Korhogo</span>
+                    </div>
+                    <h4>Jean-Pierre Kassi</h4>
+                    <p>Renouvellement ordonnance</p>
+                </div>
+
+                <div class="extra-info">
+                    <h3>RENDEZ-VOUS À VENIR</h3>
+                    <div class="event-item">
+                        <div class="date-box blue">13 OCT</div>
+                        <div><strong>Session Groupée Korhogo</strong><br><small>8 patients confirmés</small></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="active-dossier">
+                <div class="patient-banner">
+                    <div class="banner-content">
+                        <small>DOSSIER ACTIF #KT-9920</small>
+                        <h1>Moussa Traoré</h1>
+                        <div class="patient-stats">
+                            <span>👤 42 ans</span>
+                            <span>📍 Korhogo, Secteur 4</span>
+                            <span>🩸 A+ Positive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clinical-grid">
+                    <div class="clinical-card">
+                        <h3>Antécédents & Signes</h3>
+                        <div class="data-row">
+                            <span>Tension Artérielle</span>
+                            <span class="val success">12/8 Normal</span>
+                        </div>
+                        <div class="data-row">
+                            <span>Glycémie (à jeun)</span>
+                            <span class="val danger">1.45 g/L</span>
+                        </div>
+                        <p class="doctor-note"><em>"Patient signale des vertiges matinaux. Observance du traitement..."</em></p>
+                    </div>
+
+                    <div class="clinical-card">
+                        <h3>Notes de Consultation</h3>
+                        <textarea placeholder="Saisissez les observations..."></textarea>
+                        <div class="note-btns">
+                            <button class="btn-ghost">DIAGNOSTIC RAPIDE</button>
+                            <button class="btn-ghost">AJOUTER PHOTO</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prescription-box">
+                    <div class="presc-header">
+                        <h3>Ordonnance Numérique</h3>
+                        <small>REF: ORD-2023-8821</small>
+                    </div>
+                    <div class="presc-inputs">
+                        <div class="input-group">
+                            <label>MÉDICAMENT / TRAITEMENT</label>
+                            <input type="text" value="Metformine 500mg">
+                        </div>
+                        <div class="input-group">
+                            <label>POSOLOGIE</label>
+                            <input type="text" placeholder="ex: 1 mat/soir">
+                        </div>
+                    </div>
+                    <div class="presc-actions">
+                        <button class="btn-link">+ Ajouter un autre médicament</button>
+                        <div class="final-btns">
+                            <button class="btn-outline">Aperçu PDF</button>
+                            <button class="btn-primary">Signer & Envoyer</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</div>
+
+<div class="video-controls">
+    <div class="control-item"><span class="icon">🎙️</span><small>MICRO</small></div>
+    <div class="control-item"><span class="icon">📹</span><small>CAMÉRA</small></div>
+    <div class="control-item end-call"><span class="icon">📞</span><small>TERMINER</small></div>
+    <div class="control-item"><span class="icon">📤</span><small>ÉCRAN</small></div>
+    <div class="control-item"><span class="icon">⋮</span><small>PLUS</small></div>
+</div>
+
+</body>
+</html>
