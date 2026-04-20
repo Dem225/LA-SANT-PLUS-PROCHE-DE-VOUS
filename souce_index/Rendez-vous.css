@@ -9,7 +9,8 @@ body { font-family: 'Inter', sans-serif; margin: 0; background: var(--bg); color
 .container { display: grid; grid-template-columns: 240px 1fr; min-height: 100vh; }
 
 /* Sidebar */
-.sidebar { background: #f1f5f9; padding: 30px 20px; display: flex; flex-direction: column; border-right: 1px solid #e2e8f0; }
+.sidebar { 
+    background: #f1f5f9; padding: 30px 20px; display: flex; flex-direction: column; border-right: 1px solid #e2e8f0; }
 .logo { font-weight: 800; color: var(--primary); margin-bottom: 30px; }
 .doctor-profile { display: flex; gap: 10px; margin-bottom: 30px; font-size: 0.8rem; }
 .doctor-profile img { border-radius: 8px; }

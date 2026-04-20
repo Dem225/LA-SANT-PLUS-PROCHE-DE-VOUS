@@ -765,3 +765,30 @@ header {
         height: auto;
     }
 }
+
+:root {
+    --pink: #e91e63;
+    --gray-dark: #333;
+}
+
+
+#liste {
+    display: flex;
+    list-style: none; 
+    gap: 20px;
+}
+
+
+#liste a {
+    text-decoration: none;
+    color: var(--gray-dark);
+    padding: 5px 0;
+    transition: 0.3s; 
+    border-bottom: 2px solid transparent; 
+}
+
+#liste a:hover, 
+#liste a.active {
+    color: var(--pink);
+    border-bottom: 2px solid var(--pink);
+}
