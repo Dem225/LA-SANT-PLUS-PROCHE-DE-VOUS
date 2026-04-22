@@ -250,7 +250,7 @@ header {
 
 .Bernard {
     height: 650px;
-    width: 85%;
+    width: 80%;
     display: flex;
     margin-top: 20px;
     justify-content: space-around;
@@ -261,7 +261,6 @@ header {
 .Durand_1 {
     height: 90%;
     width: 27%;
-
     flex-direction: column;
     display: flex;
     gap: 7px;
@@ -758,7 +757,7 @@ footer{
          min-width: 100px;
     }
     .Reem_Medicale button{
-         padding: 6px;
+         padding: 5px;
         min-width: 100px;
     }
     .formul_texte input{
