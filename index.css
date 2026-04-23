@@ -300,7 +300,6 @@ background-color: #F8F9FB;
 .flexe_cum{
     height: 55%;
     width: 100%;
-    background-color: #0053f8;
     display: flex;
     justify-content: space-between;
    align-items:   center;
@@ -310,7 +309,6 @@ background-color: #F8F9FB;
 .box_flexe_cum{
     height: 90%;
     width: 60%;
-   background-color: #0159BB;
     margin: 10px;
     display: flex;
     flex-direction: column;
