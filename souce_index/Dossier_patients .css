@@ -1,0 +1,551 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #F4F7FB;
+    display: flex;
+    color: #1A1D23;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 260px;
+    background: #FFFFFF;
+    height: 100vh;
+    position: fixed;
+    padding: 30px 20px;
+    border-right: 1px solid #F0F0F0;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    color: #0A37A3;
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.user-profile img {
+    border-radius: 12px;
+}
+
+.user-name {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.user-status {
+    font-size: 11px;
+    color: #828282;
+}
+
+.nav-links {
+    flex: 1;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #828282;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.nav-item.active {
+    background: #E8F0FE;
+    color: #0A37A3;
+    font-weight: 600;
+    border-right: 3px solid #0A37A3;
+}
+
+.btn-new-consultation {
+    background: #0A37A3;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #828282;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    margin-left: 260px;
+    flex: 1;
+    padding: 30px 60px;
+}
+
+/* TOP BAR */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.search-input-wrapper {
+    background: #F0F2F5;
+    width: 500px;
+    padding: 6px 6px 6px 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.search-input-wrapper input {
+    border: none;
+    background: none;
+    outline: none;
+    flex: 1;
+    font-size: 13px;
+}
+
+.search-input-wrapper i {
+    color: #828282;
+}
+
+.filter-square {
+    background: white;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    color: #1A1D23 !important;
+}
+
+.top-right-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.notification-bell {
+    position: relative;
+    font-size: 18px;
+    color: #828282;
+}
+
+.notif-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #EB5757;
+    color: white;
+    font-size: 9px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-icon {
+    color: #828282;
+    font-size: 18px;
+}
+
+.status-indicator {
+    font-size: 11px;
+    font-weight: 700;
+    color: #27AE60;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.dot-online {
+    width: 7px;
+    height: 7px;
+    background: #27AE60;
+    border-radius: 50%;
+}
+
+.urgency-badge {
+    background: #FDECEC;
+    color: #EB5757;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+/* CONTENT HEADER */
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+}
+
+.hds-certified {
+    background: #E6F4EA;
+    color: #1E8E3E;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 10px;
+    font-weight: 800;
+    width: fit-content;
+    margin-bottom: 15px;
+}
+
+.content-header h1 {
+    font-size: 32px;
+    color: #0A37A3;
+    margin-bottom: 10px;
+}
+
+.content-header p {
+    color: #828282;
+    font-size: 14px;
+    max-width: 500px;
+}
+
+.total-patients-card {
+    background: white;
+    padding: 15px 25px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.stats-label {
+    font-size: 9px;
+    color: #828282;
+    font-weight: 700;
+    display: block;
+}
+
+.stats-number {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.stats-icon-bg {
+    background: #E8F0FE;
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0A37A3;
+    font-size: 20px;
+}
+
+/* PATIENT GRID */
+.patients-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.patient-card {
+    background: white;
+    border-radius: 25px;
+    padding: 25px;
+    border: 1px solid #F0F0F0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+}
+
+.card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.patient-avatar {
+    width: 55px;
+    height: 55px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.patient-info h3 {
+    font-size: 17px;
+    margin-bottom: 2px;
+}
+
+.ssn-text {
+    font-size: 11px;
+    color: #828282;
+}
+
+.age-badge {
+    background: #E6FBF9;
+    color: #0D9488;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-left: auto;
+}
+
+.pathology-section {
+    margin-bottom: 20px;
+}
+
+.section-label {
+    font-size: 9px;
+    color: #828282;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.pathology-section p {
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dot-green {
+    color: #27AE60;
+    font-size: 8px;
+}
+
+.dot-red {
+    color: #EB5757;
+    font-size: 8px;
+}
+
+.visit-summary {
+    display: flex;
+    background: #F8F9FA;
+    padding: 15px;
+    border-radius: 12px;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.v-label {
+    font-size: 9px;
+    color: #828282;
+    font-weight: 700;
+    display: block;
+}
+
+.v-value {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.status-stable {
+    color: #27AE60;
+}
+
+.status-warning {
+    color: #EB5757;
+}
+
+.btn-view-dossier {
+    width: 100%;
+    background: #EAECEF;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 11px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.btn-view-dossier:hover {
+    background: #0A37A3;
+    color: white;
+}
+
+/* FOOTER SECURITY */
+.footer-security {
+    margin-top: 60px;
+    border-top: 1px solid #F0F0F0;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.sec-item {
+    font-size: 10px;
+    font-weight: 700;
+    color: #BDBDBD;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+
+/* ============================================================
+   RESPONSIVITÉ UNIFIÉE - HEADER & SIDEBAR FIXES
+   ============================================================ */
+
+/* --- 1. TABLETTES & LAPTOPS (Écrans moyens : 1024px à 1300px) --- */
+@media (max-width: 1300px) {
+    .sidebar {
+        width: 90px;
+        padding: 30px 10px;
+        align-items: center;
+    }
+
+    /* On cache le texte du Header/Sidebar pour ne garder que les icônes */
+    .logo, 
+    .user-name, 
+    .user-status, 
+    .nav-item span, 
+    .footer-link span, 
+    .btn-new-consultation {
+        display: none;
+    }
+
+    /* Ajustement de la marge principale */
+    .main-content {
+        margin-left: 90px;
+        padding: 30px;
+    }
+
+    /* Grille de patients : on passe de 3 à 2 colonnes */
+    .patients-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* --- 2. TABLETTES PORTRAIT (768px à 1024px) --- */
+@media (max-width: 992px) {
+    .search-input-wrapper {
+        width: 100%; /* La barre de recherche s'élargit */
+    }
+
+    .content-header {
+        flex-direction: column; /* On empile le titre et la carte stats */
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .total-patients-card {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+/* --- 3. SMARTPHONES (En dessous de 768px) --- */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    /* La Sidebar devient une barre fixe en haut */
+    .sidebar {
+        width: 100%;
+        height: 70px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        flex-direction: row;
+        padding: 0 20px;
+        justify-content: space-between;
+        border-right: none;
+        border-bottom: 1px solid #F0F0F0;
+        z-index: 1000;
+    }
+
+    .logo {
+        margin-bottom: 0;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    /* Cache le profil et les boutons inutiles sur mobile */
+    .user-profile, 
+    .btn-new-consultation, 
+    .sidebar-footer {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 0;
+        margin-top: 70px; /* On laisse de la place pour la barre du haut */
+        padding: 20px;
+    }
+
+    .top-bar {
+        flex-direction: column-reverse; /* Icons en haut, Recherche en bas */
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    /* TOUTES les grilles passent à 1 seule colonne */
+    .patients-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* --- 4. PETITS SMARTPHONES ( < 480px) --- */
+@media (max-width: 480px) {
+    .content-header h1 {
+        font-size: 24px;
+    }
+
+    /* On empile les infos de visite dans les cartes */
+    .visit-summary {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .visit-summary div {
+        width: 100%;
+    }
+
+    .footer-security {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+    }
+}

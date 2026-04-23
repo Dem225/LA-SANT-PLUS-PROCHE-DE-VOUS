@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETHEREAL - Dossiers Patients</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./Dossier_patients .css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="logo">ETHEREAL</div>
+        
+        <div class="user-profile">
+            <img src="https://via.placeholder.com/45" alt="Dr. Kouassi">
+            <div class="user-meta">
+                <span class="user-name">Dr. Kouassi</span>
+                <span class="user-status">Praticien Vérifié</span>
+            </div>
+        </div>
+
+        <nav class="nav-links">
+            <a href="./Espace_Doc.html" class="nav-item"><i class="fa-solid fa-chart-pie"></i> <span>Tableau de bord</span></a>
+            <a href="./File _d'_attente.html" class="nav-item"><i class="fa-solid fa-user-clock"></i> <span>File d'attente</span></a>
+            <a href="#" class="nav-item active"><i class="fa-solid fa-address-book"></i> <span>Dossiers patients</span></a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-sliders"></i> <span>Paramètres</span></a>
+        </nav>
+
+        <button class="btn-new-consultation">
+            <i class="fa-solid fa-plus"></i> Nouvelle Consultation
+        </button>
+
+        <div class="sidebar-footer">
+            <a href="#" class="footer-link"><i class="fa-regular fa-circle-question"></i> Centre d'aide</a>
+            <a href="#" class="footer-link"><i class="fa-solid fa-arrow-right-from-bracket"></i> Déconnexion</a>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        
+        <header class="top-bar">
+            <div class="search-section">
+                <div class="search-input-wrapper">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Rechercher par nom ou numéro de sécurité sociale...">
+                    <div class="filter-square">
+                        <i class="fa-solid fa-sliders"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="top-right-actions">
+                <div class="notification-bell   ">
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+                <i class="fa-solid fa-video action-icon"></i>
+                <i class="fa-regular fa-calendar action-icon"></i>
+                
+                <div class="status-indicator">
+                    <span class="dot-online"></span> STATUT: EN LIGNE
+                </div>
+                <div class="urgency-badge">URGENCE</div>
+            </div>
+        </header>
+
+        <div class="content-header">
+            <div class="header-text">
+                <div class="hds-certified">
+                    HDS CERTIFIED <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <h1>Dossiers Patients</h1>
+                <p>Base de données médicale hautement sécurisée. Accès restreint aux professionnels de santé accrédités.</p>
+            </div>
+
+            <div class="total-patients-card">
+                <div class="stats-text">
+                    <span class="stats-label">TOTAL PATIENTS</span>
+                    <span class="stats-number">1,284</span>
+                </div>
+                <div class="stats-icon-bg">
+                    <i class="fa-solid fa-users-viewfinder"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="patients-grid">
+            
+            <article class="patient-card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/55" class="patient-avatar">
+                    <div class="patient-info">
+                        <h3>Clara Mendy</h3>
+                        <span class="ssn-text">SSN: 2 89 04 75 124 098</span>
+                    </div>
+                    <span class="age-badge">32 ANS</span>
+                </div>
+                
+                <div class="pathology-section">
+                    <span class="section-label">DERNIÈRE PATHOLOGIE</span>
+                    <p><i class="fa-solid fa-circle dot-green"></i> Infection Respiratoire Aiguë</p>
+                </div>
+
+                <div class="visit-summary">
+                    <div class="visit-item">
+                        <span class="v-label">DERNIER RDV</span>
+                        <span class="v-value">12 Oct. 2023</span>
+                    </div>
+                    <div class="visit-item">
+                        <span class="v-label">SUIVI</span>
+                        <span class="v-value status-stable">Stable</span>
+                    </div>
+                </div>
+
+                <button class="btn-view-dossier">
+                    CONSULTER LE DOSSIER <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </article>
+
+            <article class="patient-card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/55" class="patient-avatar">
+                    <div class="patient-info">
+                        <h3>Jean-Pierre Dubois</h3>
+                        <span class="ssn-text">SSN: 1 54 08 75 432 110</span>
+                    </div>
+                    <span class="age-badge">68 ANS</span>
+                </div>
+                
+                <div class="pathology-section">
+                    <span class="section-label">DERNIÈRE PATHOLOGIE</span>
+                    <p><i class="fa-solid fa-circle dot-red"></i> Hypertension Chronique</p>
+                </div>
+
+                <div class="visit-summary">
+                    <div class="visit-item">
+                        <span class="v-label">DERNIER RDV</span>
+                        <span class="v-value">05 Oct. 2023</span>
+                    </div>
+                    <div class="visit-item">
+                        <span class="v-label">SUIVI</span>
+                        <span class="v-value status-warning">À surveiller</span>
+                    </div>
+                </div>
+
+                <button class="btn-view-dossier">
+                    CONSULTER LE DOSSIER <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </article>
+
+            <article class="patient-card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/55" class="patient-avatar">
+                    <div class="patient-info">
+                        <h3>Awa Diallo</h3>
+                        <span class="ssn-text">SSN: 2 95 11 31 990 443</span>
+                    </div>
+                    <span class="age-badge">28 ANS</span>
+                </div>
+                
+                <div class="pathology-section">
+                    <span class="section-label">DERNIÈRE PATHOLOGIE</span>
+                    <p><i class="fa-solid fa-circle dot-green"></i> Bilan de Santé Annuel</p>
+                </div>
+
+                <div class="visit-summary">
+                    <div class="visit-item">
+                        <span class="v-label">DERNIER RDV</span>
+                        <span class="v-value">28 Sept. 2023</span>
+                    </div>
+                    <div class="visit-item">
+                        <span class="v-label">SUIVI</span>
+                        <span class="v-value status-normal">Normal</span>
+                    </div>
+                </div>
+
+                <button class="btn-view-dossier">
+                    CONSULTER LE DOSSIER <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </article>
+
+            <article class="patient-card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/55" class="patient-avatar">
+                    <div class="patient-info">
+                        <h3>Awa Diallo</h3>
+                        <span class="ssn-text">SSN: 2 95 11 31 990 443</span>
+                    </div>
+                    <span class="age-badge">28 ANS</span>
+                </div>
+                
+                <div class="pathology-section">
+                    <span class="section-label">DERNIÈRE PATHOLOGIE</span>
+                    <p><i class="fa-solid fa-circle dot-green"></i> Bilan de Santé Annuel</p>
+                </div>
+
+                <div class="visit-summary">
+                    <div class="visit-item">
+                        <span class="v-label">DERNIER RDV</span>
+                        <span class="v-value">28 Sept. 2023</span>
+                    </div>
+                    <div class="visit-item">
+                        <span class="v-label">SUIVI</span>
+                        <span class="v-value status-normal">Normal</span>
+                    </div>
+                </div>
+
+                <button class="btn-view-dossier">
+                    CONSULTER LE DOSSIER <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </article>
+            <article class="patient-card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/55" class="patient-avatar">
+                    <div class="patient-info">
+                        <h3>Awa Diallo</h3>
+                        <span class="ssn-text">SSN: 2 95 11 31 990 443</span>
+                    </div>
+                    <span class="age-badge">28 ANS</span>
+                </div>
+                
+                <div class="pathology-section">
+                    <span class="section-label">DERNIÈRE PATHOLOGIE</span>
+                    <p><i class="fa-solid fa-circle dot-green"></i> Bilan de Santé Annuel</p>
+                </div>
+
+                <div class="visit-summary">
+                    <div class="visit-item">
+                        <span class="v-label">DERNIER RDV</span>
+                        <span class="v-value">28 Sept. 2023</span>
+                    </div>
+                    <div class="visit-item">
+                        <span class="v-label">SUIVI</span>
+                        <span class="v-value status-normal">Normal</span>
+                    </div>
+                </div>
+
+                <button class="btn-view-dossier">
+                    CONSULTER LE DOSSIER <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </article>
+            <article class="patient-card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/55" class="patient-avatar">
+                    <div class="patient-info">
+                        <h3>Awa Diallo</h3>
+                        <span class="ssn-text">SSN: 2 95 11 31 990 443</span>
+                    </div>
+                    <span class="age-badge">28 ANS</span>
+                </div>
+                
+                <div class="pathology-section">
+                    <span class="section-label">DERNIÈRE PATHOLOGIE</span>
+                    <p><i class="fa-solid fa-circle dot-green"></i> Bilan de Santé Annuel</p>
+                </div>
+
+                <div class="visit-summary">
+                    <div class="visit-item">
+                        <span class="v-label">DERNIER RDV</span>
+                        <span class="v-value">28 Sept. 2023</span>
+                    </div>
+                    <div class="visit-item">
+                        <span class="v-label">SUIVI</span>
+                        <span class="v-value status-normal">Normal</span>
+                    </div>
+                </div>
+
+                <button class="btn-view-dossier">
+                    CONSULTER LE DOSSIER <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </article>
+            <article class="patient-card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/55" class="patient-avatar">
+                    <div class="patient-info">
+                        <h3>Awa Diallo</h3>
+                        <span class="ssn-text">SSN: 2 95 11 31 990 443</span>
+                    </div>
+                    <span class="age-badge">28 ANS</span>
+                </div>
+                
+                <div class="pathology-section">
+                    <span class="section-label">DERNIÈRE PATHOLOGIE</span>
+                    <p><i class="fa-solid fa-circle dot-green"></i> Bilan de Santé Annuel</p>
+                </div>
+
+                <div class="visit-summary">
+                    <div class="visit-item">
+                        <span class="v-label">DERNIER RDV</span>
+                        <span class="v-value">28 Sept. 2023</span>
+                    </div>
+                    <div class="visit-item">
+                        <span class="v-label">SUIVI</span>
+                        <span class="v-value status-normal">Normal</span>
+                    </div>
+                </div>
+
+                <button class="btn-view-dossier">
+                    CONSULTER LE DOSSIER <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </article>
+            <article class="patient-card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/55" class="patient-avatar">
+                    <div class="patient-info">
+                        <h3>Awa Diallo</h3>
+                        <span class="ssn-text">SSN: 2 95 11 31 990 443</span>
+                    </div>
+                    <span class="age-badge">28 ANS</span>
+                </div>
+                
+                <div class="pathology-section">
+                    <span class="section-label">DERNIÈRE PATHOLOGIE</span>
+                    <p><i class="fa-solid fa-circle dot-green"></i> Bilan de Santé Annuel</p>
+                </div>
+
+                <div class="visit-summary">
+                    <div class="visit-item">
+                        <span class="v-label">DERNIER RDV</span>
+                        <span class="v-value">28 Sept. 2023</span>
+                    </div>
+                    <div class="visit-item">
+                        <span class="v-label">SUIVI</span>
+                        <span class="v-value status-normal">Normal</span>
+                    </div>
+                </div>
+
+                <button class="btn-view-dossier">
+                    CONSULTER LE DOSSIER <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </article>
+            <article class="patient-card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/55" class="patient-avatar">
+                    <div class="patient-info">
+                        <h3>Awa Diallo</h3>
+                        <span class="ssn-text">SSN: 2 95 11 31 990 443</span>
+                    </div>
+                    <span class="age-badge">28 ANS</span>
+                </div>
+                
+                <div class="pathology-section">
+                    <span class="section-label">DERNIÈRE PATHOLOGIE</span>
+                    <p><i class="fa-solid fa-circle dot-green"></i> Bilan de Santé Annuel</p>
+                </div>
+
+                <div class="visit-summary">
+                    <div class="visit-item">
+                        <span class="v-label">DERNIER RDV</span>
+                        <span class="v-value">28 Sept. 2023</span>
+                    </div>
+                    <div class="visit-item">
+                        <span class="v-label">SUIVI</span>
+                        <span class="v-value status-normal">Normal</span>
+                    </div>
+                </div>
+
+                <button class="btn-view-dossier">
+                    CONSULTER LE DOSSIER <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </article>
+            <article class="patient-card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/55" class="patient-avatar">
+                    <div class="patient-info">
+                        <h3>Awa Diallo</h3>
+                        <span class="ssn-text">SSN: 2 95 11 31 990 443</span>
+                    </div>
+                    <span class="age-badge">28 ANS</span>
+                </div>
+                
+                <div class="pathology-section">
+                    <span class="section-label">DERNIÈRE PATHOLOGIE</span>
+                    <p><i class="fa-solid fa-circle dot-green"></i> Bilan de Santé Annuel</p>
+                </div>
+
+                <div class="visit-summary">
+                    <div class="visit-item">
+                        <span class="v-label">DERNIER RDV</span>
+                        <span class="v-value">28 Sept. 2023</span>
+                    </div>
+                    <div class="visit-item">
+                        <span class="v-label">SUIVI</span>
+                        <span class="v-value status-normal">Normal</span>
+                    </div>
+                </div>
+
+                <button class="btn-view-dossier">
+                    CONSULTER LE DOSSIER <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </article>
+            <article class="patient-card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/55" class="patient-avatar">
+                    <div class="patient-info">
+                        <h3>Awa Diallo</h3>
+                        <span class="ssn-text">SSN: 2 95 11 31 990 443</span>
+                    </div>
+                    <span class="age-badge">28 ANS</span>
+                </div>
+                
+                <div class="pathology-section">
+                    <span class="section-label">DERNIÈRE PATHOLOGIE</span>
+                    <p><i class="fa-solid fa-circle dot-green"></i> Bilan de Santé Annuel</p>
+                </div>
+
+                <div class="visit-summary">
+                    <div class="visit-item">
+                        <span class="v-label">DERNIER RDV</span>
+                        <span class="v-value">28 Sept. 2023</span>
+                    </div>
+                    <div class="visit-item">
+                        <span class="v-label">SUIVI</span>
+                        <span class="v-value status-normal">Normal</span>
+                    </div>
+                </div>
+
+                <button class="btn-view-dossier">
+                    CONSULTER LE DOSSIER <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </article>
+            <article class="patient-card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/55" class="patient-avatar">
+                    <div class="patient-info">
+                        <h3>Awa Diallo</h3>
+                        <span class="ssn-text">SSN: 2 95 11 31 990 443</span>
+                    </div>
+                    <span class="age-badge">28 ANS</span>
+                </div>
+                
+                <div class="pathology-section">
+                    <span class="section-label">DERNIÈRE PATHOLOGIE</span>
+                    <p><i class="fa-solid fa-circle dot-green"></i> Bilan de Santé Annuel</p>
+                </div>
+
+                <div class="visit-summary">
+                    <div class="visit-item">
+                        <span class="v-label">DERNIER RDV</span>
+                        <span class="v-value">28 Sept. 2023</span>
+                    </div>
+                    <div class="visit-item">
+                        <span class="v-label">SUIVI</span>
+                        <span class="v-value status-normal">Normal</span>
+                    </div>
+                </div>
+
+                <button class="btn-view-dossier">
+                    CONSULTER LE DOSSIER <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </article>
+
+        </div>
+
+        <footer class="footer-security">
+            <div class="sec-item"><i class="fa-solid fa-lock"></i> CHIFFREMENT AES-256</div>
+            <div class="sec-item"><i class="fa-solid fa-shield-halved"></i> CERTIFIÉ HDS FRANCE</div>
+            <div class="sec-item"><i class="fa-solid fa-clock-rotate-left"></i> JOURNAL D'ACCÈS ACTIVÉ</div>
+        </footer>
+
+    </main>
+
+</body>
+</html>

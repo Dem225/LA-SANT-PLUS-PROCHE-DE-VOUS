@@ -223,11 +223,13 @@ background-color: #F8F9FB;
 }
 #Sante{
     height: 450px;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #F8F9FB;
+    border: 1px solid black;
     
 }
 .UrGente {
@@ -299,7 +301,7 @@ background-color: #F8F9FB;
 .flexe_cum{
     height: 55%;
     width: 100%;
-    background-color: #F8F9FB;
+    background-color: #0053f8;
     display: flex;
     justify-content: space-between;
    align-items:   center;
@@ -639,7 +641,7 @@ header {
 #Sante{
      height: auto; /* Deletes fixed hauteurs */
     flex-wrap: wrap; /* CRITIQUE : passe à la ligne sur mobile */
-    padding: 50px 20px;
+    padding: 10px 20px;
     gap: 20px;
 
 }

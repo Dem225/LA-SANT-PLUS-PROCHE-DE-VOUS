@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethereal - File d'attente</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./File _d'_attente.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="logo">ZEBI.CLINIQUE</div>
+        
+        <div class="user-profile">
+            <img src="" alt="Dr. Kouassi">
+            <div class="user-meta">
+                <span class="user-name">Dr. Kouassi</span>
+                <span class="user-status">Praticien Vérifié</span>
+            </div>
+        </div>
+
+        <nav class="nav-links">
+            <a href="./Espace_Doc.html" class="nav-item"><i class="fa-solid fa-chart-pie"></i> <span>Tableau de bord</span></a>
+            <a href="#" class="nav-item active"><i class="fa-solid fa-user-clock"></i> <span>File d'attente</span></a>
+            <a href="./Dossier_patients .html" class="nav-item"><i class="fa-solid fa-address-book"></i> <span>Dossiers patients</span></a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-sliders"></i> <span>Paramètres</span></a>
+        </nav>
+
+        <button class="btn-consultation">Nouvelle Consultation</button>
+
+        <div class="sidebar-footer">
+            <a href="#" class="footer-link"><i class="fa-regular fa-circle-question"></i> Centre d'aide</a>
+            <a href="#" class="footer-link"><i class="fa-solid fa-arrow-right-from-bracket"></i> Déconnexion</a>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="top-bar">
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Rechercher un patient ou une origine...">
+            </div>
+            <div class="top-actions">
+                <i class="fa-regular fa-bell"></i>
+                <i class="fa-solid fa-video"></i>
+                <i class="fa-regular fa-calendar"></i>
+            </div>
+        </header>
+
+        <section class="hero">
+            <span class="hero-tag">GÉRER LES TÉLÉCONSULTATIONS</span>
+            <h1>File d'attente active</h1>
+            <p>Surveillance en temps réel des patients connectés via les hubs régionaux de Korhogo, Odienné et Man. Priorisez les urgences critiques selon le score de tri clinique.</p>
+        </section>
+
+        <div class="filter-bar">
+            <button class="filter-btn active">Tous les patients</button>
+            <button class="filter-btn">Urgences Critiques</button>
+            <button class="filter-btn">Hub Korhogo</button>
+            <button class="filter-btn">Hub Odienné</button>
+            <button class="filter-btn">Hub Man</button>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="patient-list">
+                
+                <div class="patient-card urgent">
+                    <div class="card-header">
+                        <img src="https://via.placeholder.com/60" class="avatar">
+                        <div class="patient-title">
+                            <span class="priority-label">PRIORITÉ 1 • URGENCE</span>
+                            <h3>Bamba Fatoumata</h3>
+                            <span class="location"><i class="fa-solid fa-location-dot"></i> Hub Korhogo • 28 ans</span>
+                        </div>
+                        <i class="fa-solid fa-circle-exclamation alert-icon"></i>
+                    </div>
+                    <div class="card-body">
+                        <div class="info-box">
+                            <span class="label">ATTENTE</span>
+                            <span class="value">04m</span>
+                        </div>
+                        <div class="info-box">
+                            <span class="label">SYMPTÔMES</span>
+                            <span class="value">Fièvre sévère & Toux</span>
+                        </div>
+                        <div class="info-box">
+                            <span class="label">CONNEXION</span>
+                            <span class="value" style="color: #333a36;"><i class="fa-solid fa-circle"></i> 4G Stable</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-primary-call"><i class="fa-solid fa-phone"></i> Appeler le patient</button>
+                        <button class="btn-icon"><i class="fa-solid fa-file-medical"></i></button>
+                        <button class="btn-icon"><i class="fa-solid fa-share-nodes"></i></button>
+                    </div>
+                </div>
+
+                <div class="patient-card">
+                    <div class="card-header">
+                        <img src="https://via.placeholder.com/60" class="avatar">
+                        <div class="patient-title">
+                            <span class="priority-label" style="color: #27AE60;">PRIORITÉ 2 • STABLE</span>
+                            <h3>Koffi Kouamé Jean</h3>
+                            <span class="location"><i class="fa-solid fa-location-dot"></i> Hub Odienné • 62 ans</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="info-box">
+                            <span class="label">ATTENTE</span>
+                            <span class="value">18m</span>
+                        </div>
+                        <div class="info-box">
+                            <span class="label">MOTIF</span>
+                            <span class="value">Suivi Diabète T2</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-secondary-call"><i class="fa-solid fa-phone"></i> Appeler le patient</button>
+                        <button class="btn-icon"><i class="fa-solid fa-file-medical"></i></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="stats-sidebar">
+                <div class="hub-overview-card">
+                    <h2>Vue d'ensemble Hubs</h2>
+                    <div class="hub-item">
+                        <div class="hub-info"><span>Korhogo (Hub Central)</span> <strong>04</strong></div>
+                        <div class="progress-bar"><div class="progress" style="width: 30%; background: #27AE60;"></div></div>
+                    </div>
+                    <div class="hub-item">
+                        <div class="hub-info"><span>Odienné</span> <strong>05</strong></div>
+                        <div class="progress-bar"><div class="progress" style="width: 60%; background: #0b93e7;"></div></div>
+                    </div>
+
+                    
+                    <div class="hub-item">
+                        <div class="hub-info"><span>Man</span> <strong>10</strong></div>
+                        <div class="progress-bar"><div class="progress" style="width: 73%; background: #ff0404;"></div></div>
+                    </div>
+
+                    <div class="hub-item">
+                        <div class="hub-info"><span>Bouflé</span> <strong>16</strong></div>
+                        <div class="progress-bar"><div class="progress" style="width: 79%; background: #ff0404;"></div></div>
+                    </div>
+                    <button class="btn-report">RAPPORT D'ACTIVITÉ</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
